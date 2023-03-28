@@ -7,3 +7,4 @@ Registrazione vedere minuto 2:30
 (Argomento Del Form)
 Di una select viene intercettata la value (importante per javascript)
 vedere registrazione 3:15
+guardare dall'inizio seconda parte
