@@ -1,0 +1,74 @@
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif; 
+        }
+        .textoriginal {
+            text-align: center;
+            font-size: 50px;
+            background: linear-gradient(90deg, rgba(12, 133, 133, 0.4), rgba(231, 228, 16, 0.4));
+            padding-bottom: 20px;
+        }
+        #searchimage {
+            background-image: url(https://enjoy.vivi.city/images/enjoyvivicity/Leonardo-da-vinci/Annunciazione-dipinto.jpg);
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: cover;
+        }
+        #paragraphb {
+            font-family: 'Roboto Slab', serif;
+            color: blue;
+            font-style: oblique;
+        }
+        #important {
+            color: black;
+            text-align: center;
+            padding-left: auto;
+            padding-right: auto;
+            background: linear-gradient(90deg, rgba(12, 133, 133, 0.4), rgba(231, 228, 16, 0.4));
+            margin-bottom: 20px;
+        }
+        #important:hover {
+            color: red;
+        }
+       .fontfamily {
+        font-family: 'Inter', sans-serif;
+        font-size: 2em;
+        font-style: oblique; text-decoration: underline;
+        text-align: left;
+        padding-bottom: 5px;
+       }
+       img {
+        width: 400px;
+        height: 200px;
+        padding-left: 28px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+       }
+       input {
+        padding-left: auto;
+        padding-right: auto;
+       }
+       form {
+        max-width: 400px;
+        padding-left: 20px;
+       }
+       input, button {
+        border-color: blue;
+       }
+       .gioia {
+        padding-bottom: 10px;
+       }
+       audio {
+        margin-left: 750px;
+        margin-bottom: 0px;
+       }
+       #container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }

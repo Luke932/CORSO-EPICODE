@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20210805/pngtree-modern-simple-elegant-gradinet-green-landing-page-website-background-image_757426.jpg);
+    background-attachment:  fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+#sinistra .ionicons {
+    padding: 2em;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ion-icon {
+    cursor: pointer;
+}
+#sinistra b {
+    font-size: 0.5em;
+}
+#sinistra {
+    align-content: flex-start;
+}
+#destrasuperiore {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em;
+    flex-wrap: wrap;
+}
+#logo {
+    height: 50%;    
+}
+#main {
+    width: 100%;
+}
+#ricerca {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+input {
+    width: 25em;
+    text-align: center;
+    height: 1.5em;
+}
+button {
+    height: 2em;
+}
+.lente {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.microfono {
+    font-size: 1em;
+    margin-left: 0.3em;
+}
+#iconelaterali {
+    font-size: 1.5em;
+    padding-right: 2em;
+    display: flex;
+    align-items: center;
+}
+b {
+    margin: 0;
+    cursor: pointer;
+}
+#contenuto {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.imgtesto {
+    margin-top: 5em;
+}
+
+

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*LEZIONE SU NUMERI E OPERATORI MATEMATICI*/
+let nome = 'Ignazio';
+let testo = 'Ciao sono ';
+    console.log (testo + nome);
+        /*somma stringhe*/
+let numero = '56';
+let numeri = 56 + numero.toString();
+    console.log (numeri);
+        /*unione tra stringa e numero senza somma*/
+let number = Number ('56') + 56;
+    console.log (number);
+        /*unione tra numero e stringa con somma*/
+    console.log (typeof number);
+        /*tipo di proprietà*/
+    console.log (typeof numeri);
+        /*tipo di proprierà*/
+
+        /*LEZIONI SULLE STRINGHE DI TEST0*/
+let ciao = "ciao sono Luca il benzinaio";
+let h1 = `<h1> ${ciao} e mi devi 50 euro</h1>`;
+    document.body.innerHTML = h1;
+        /*inserimento di un elemento di tipo h1 nella pagina con unione con proprietà "let ciao"*/
+let bravo = 20 * 6;
+let somma = `<h1> ${bravo} e mi devi 50 euro</h1>`;
+    document.body.innerHTML = somma;
+        /*inserimento di un elemento di tipo h1 nella pagina con moltiplicazione ed unione 
+        con proprietà "let ciao"*/
+let ilm = 20 + 6;
+let sorate = `<h1> ${ilm} e mi devi 50 euro</h1>`;
+    document.body.innerHTML = sorate;
+        /*inserimento di un elemento di tipo h1 nella pagina con addizione ed unione 
+        con proprietà "let ciao"*/
+
+        /*LEZIONE SUI METODI DI STRINGHE*/
+let stringa = 'Ignazio ha un carattere pessimo e si arrabbia facilmente';
+    console.log(stringa.length);
+
+    console.log(stringa[5]);
+
+    console.log(stringa[stringa.length-2]);
+    console.log(stringa.indexOf('pessimo'));
+
+let indexcorso = stringa.indexOf ('pessimo');
+    console.log(stringa.slice(indexcorso));
+
+    console.log(stringa.toUpperCase());
+    console.log(stringa.toLowerCase());
+
+    console.log(stringa.replace('pessimo', 'bellissimo'));
+        /*misurazione della lunghezza di una stringa, prendere un carattere specifico, prendere 
+        parte di una stringa e da che numero di carattere parte quella stringa, cambiare dimensione
+        del carattere ed infine sostituire una parola della stringa originale con un'altra parola*/
+        
+        /*LEZIONE SUGLI ARRAY*/
+let citta = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+        console.log(citta);
+        console.log(citta[citta.length-3]);
+        console.log(citta[2]);
+
+    for (i=0; i<citta.length; i++) {
+        console.log(citta[i]);
+    }
+    for (i=0; i<citta.length; i++) {
+        console.log(citta[1]);
+    }
+
+let cittaa = 'Palermo, Milano, Trapani, Mazara, Messina';
+let data = cittaa.split(',');
+        console.log(data);
+let data2 = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+let cittaaa = data2.join(',');
+        console.log(cittaaa);
+let data3 = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+let citta2 = data3.join('-');
+        console.log(citta2);
+
+let data4 = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+data4.push ('Francoforte');
+        console.log(data4);
+let data5 = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+data5.pop ();
+        console.log(data5);
+let data6 = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+data6.unshift ('Francoforte');
+        console.log(data6);
+let data7 = ['Palermo', 'Milano', 'Trapani', 'Mazara', 'Messina'];
+data7.shift ();
+data7.shift ();
+        console.log(data7);
+        /*accedere e modificare dati in un array e vederne la lunghezza, 
+        come ciclare gli elementi di un array, convertire stringhe in array e viceversa
+        con split e join(usando qualsiasi tipo di punteggiatura per separare le varie parole
+        o frasi), aggiungere un nuovo elemento al nostro array (push-unshift(aggiunge in testa)), eliminare l'ultimo 
+        elemento (pop-shift (toglie in testa)) */
+
+        /*LEZIONE SUI CONDIZIONALI*/
+        /*(dopo la verifica delle condizioni va a proiettarsi nella pagina
+        la conclusione finale scritta nel codice)*/
+let nome1 = 'Ignazio';
+    if(nome1 == 'Ignazio'){
+        console.log('Ciao Ignazio');
+    }
+
+let nome2 = 'Isabella';
+    if(nome2 == 'Ignazio'){
+        console.log('Ciao Ignazio');
+    }
+    else if(nome2 == 'Isabella'){
+        console.log('Ciao Isabella');
+    }
+    
+let nome3 = 'Beatrice';
+    if(nome3 == 'Ignazio'){
+        console.log('Ciao Ignazio');
+    }
+    else if(nome3 == 'Isabella'){
+        console.log('Ciao Isabella');
+    }
+    else{
+        console.log ('Benvenuta straniera');
+    }
+        /*usando if,else if ed else stabiliamo proiettando 
+        il codice sullo schermo l'identità dell'utente con le stringhe
+        (if = se ) (else if = invece se) (else = altrimenti)
+        */
+
+let numeri4 = 252;
+    if(numeri4 < 256){
+        console.log('va bene');
+    }
+    else if(numeri4 > 256){
+        console.log('non va bene')
+    }
+
+let numeri5 = '252';
+    if(numeri5 == 256){
+        console.log('non va bene');
+    }
+    else if(numeri5 > 256){
+        console.log('non va bene')
+    }
+    else (numeri5 === '252');{
+        console.log('va bene')
+    }
+
+         /*usando if,else if ed else stabiliamo proiettando 
+        il codice sullo schermo tramite dei calcoli matematici una conclusione
+        (if = se ) (else if = invece se) (else = altrimenti)
+        */  
+
+let numeri6 = 21;
+    if(numeri6 < 30){
+        if(numeri6 % 2 == 0)
+        console.log('numeri pari')
+    else
+        console.log('numeri dispari')
+    }
+        /*innestare if dando alla fine una conclusione logica
+        attraverso questa formula*/
+
+let numeri7 = 24;
+    if(numeri7 > 20 && numeri7 % 2 == 0)
+        console.log('ok');
+
+let numeri8 = 17;
+    if(numeri8 > 20 && numeri8 % 2 == 0)
+        console.log('numeri pari')
+    else if(numeri8 < 20 && numeri8 % 2 != 0)
+        console.log('numeri dispari')
+    
+let numeri9 = 15;
+    if(numeri9 != 14 && numeri9 % 3 == 1)
+        console.log('ok va bene')
+    else if(numeri9 != 14 && numeri9 % 2 == 0)
+        console.log('ok va bene')
+    else{
+        console.log('riprova esercizio')
+    }
+        /*attraverso l'uso di && accoppiate 2 formule matematiche e se il risulato 
+        verificato dal codice è giusto viene proiettato nel browser  
+        quello che si è espresso nel console.log*/
+
+let numeri10 = 24;
+    if(numeri10 < 20 || numeri10 % 2 == 0)
+        console.log('ok');
+
+let numeri11 = 17;
+    if(numeri11 > 20 || numeri11 % 12 == 0)
+        console.log('non va bene')
+    else if(numeri11 < 20 || numeri11 % 2 != 0)
+        console.log('va bene')
+    
+let numeri12 = 15;
+    if(numeri12 != 15 || numeri12 % 3 != 0)
+        console.log('ok va bene')
+    else if(numeri12 > 16 || numeri12 % 2 == 0)
+        console.log('ok va bene')
+    else{
+        console.log('riprova esercizio')
+    }
+        /*attraverso l'uso di || accoppiate 2 formule matematiche e se una delle 2
+        dopo essere stato verificato è giusto viene proiettato nel browser 
+        quello che si è espresso nel console.log*/
+
+let nome4 = 'Ignazio';
+    if(!(nome4 == 'Ignazio')){
+        console.log('Non va bene')
+    }
+    else if(!(nome4 == 'Giuseppe')){
+        console.log('Va bene')
+    }
+
+let nome5 = 'Ignazio';
+    if(!(nome5 == 'Ignazio')){
+        console.log('Non va bene')
+    }
+    else if(!(nome5 == 'Ignazio')){
+        console.log('Va bene')
+    }
+    else {
+        console.log('Riprovaci')
+    }
+
+let IsOnline = true;
+    if (!IsOnline){
+        console.log('Non è online')
+    }
+    else{
+        console.log('è online')
+    }
+        /*attraverso l'uso di Not(!) andiamo a verificare la negazione o diversità di un
+        elemento con un altro*/
+
+let nome6 = 'Franco';
+    switch (nome6){
+        case 'Luca': 
+            console.log('Ciao Luca');
+            break;
+        case 'Ignazio': 
+            console.log ('Ciao Ignazio');
+            break;
+        case 'Franco':
+            console.log ('Ciao Franco');
+    }
+
+let nome7 = 'Franco';
+    switch (nome7){
+        case 'Luca': 
+            console.log('Ciao Luca');
+            break;
+        case 'Ignazio': 
+            console.log ('Ciao Ignazio');
+            break;
+        case 'Franca':
+            console.log ('Ciao Franca');
+            break;
+        default:
+            console.log('A cu appaitteni?')
+    }
+
+let numeri13 = 28;
+    switch (numeri13){
+        case 14 * 1:
+            console.log('Corretto');
+            break;
+        case 30 - 1:
+            console.log('corretto');
+            break;
+        case 28 < 27:
+            console.log('sbagliato');
+            break;
+        default:
+            console.log('da perfezionare');
+    }
+        /*un modo diverso e certo più sbrigativo dell'applicazione
+        delle condizioni attraverso lo swicth*/
+
+let numeri14 = 25;
+let name = (numeri14 < 21) ? 'Vero' : 'Falso';
+        console.log(name)
+
+let numeri15 = 25;
+let name1 = (numeri15 > 21) ? 'Vero' : 'Falso';
+        console.log(name1)
+        /*Si tratta di ternary operator, ovvero attraverso una formula o condizione
+        decidiamo che elemento proiettare nel browser*/
+
+        /*LEZIONE SUI CICLI*/
+let array = [15,81,56,44,72,56]
+    for (i = 0; i<array.length; i++){
+        console.log(array[i]);
+    }
+        /*Come azionare un contatore utilizzando "for" i=0 sarebbe il contatore e da dove dovrebbe 
+        partire*/
+
+let array1 = [15,81,56,44,72,56]
+    for (i = 0; i<array1.length; i++){
+        console.log(array1[i]);
+        if (array1 [i] == 72){
+        break;
+        }
+    }
+        /*Come azionare un contatore utilizzando "for" i=0 sarebbe il contatore e da dove dovrebbe 
+        partire e aggiugendo if e break andiamo a stabilire che il contatore si deve fermare al numero
+        scelto nella formula*/
+
+let array2 = [15,81,56,44,72,56]
+    for (i = 0; i<array2.length; i++){
+        if (array2 [i] == 72){
+        continue;
+        }
+        console.log(array2[i]);
+    }
+        /*Come azionare un contatore utilizzando "for" i=0 sarebbe il contatore e da dove dovrebbe 
+        partire e aggiugendo if e continue andiamo a stabilire che il contatore deve saltare il numero
+        scelto nella formula*/
+
+let array3 = [15,81,56,17,72,31]
+    for (i = 0; i<array3.length; i++){
+        if (array3 [i] % 2 == 0){
+        continue;
+        }
+        console.log(array3[i]);
+    }
+       
+let array4 = [15,81,56,17,72,31]
+    for (i = 0; i<array4.length; i++){
+        if (array4 [i] % 2 == 1){
+        continue;
+        }
+        console.log(array4[i]);
+    }
+        
+        /*Come azionare un contatore utilizzando "for" i=0 sarebbe il contatore e da dove dovrebbe 
+        partire, aggiugendo if e continue ed cambiando la formula dell'if andiamo a scegliere di proiettare
+        nella console solo i numeri pari o dispari*/
+
+let arruso = [22,13,34,56,99,101]
+
+let i = 0;
+    while (i < arruso.length){
+        console.log(arruso[i]);
+        i++;
+    }
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

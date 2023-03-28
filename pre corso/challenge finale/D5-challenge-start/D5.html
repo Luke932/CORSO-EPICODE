@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube - Web Prep</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+        display: flex;
+        margin: 0;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .main {
+        width: 100%;
+      }
+
+      .topbar {
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .content {
+        height: 100%;
+      }
+
+      .icon {
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+        cursor: pointer;
+      }
+
+      .icon ion-icon {
+        font-size: 2em;
+      }
+
+      .icon p {
+        margin: 0;
+      }
+
+      .icon:not(:first-of-type) {
+        height: 16vh;
+      }
+
+      .logo {
+        height: 50%;
+      }
+
+      .search-wrapper {
+        display: flex;
+        height: 50%;
+        width: 30%;
+      }
+
+      .search-wrapper input {
+        width: 100%;
+        padding: 0 1em;
+      }
+
+      .icons-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .top-icon {
+        font-size: 2em;
+        padding: 0 0.5em;
+      }
+
+      .mic-icon {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-btn {
+        padding: 0 0.7em;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="icon">
+        <ion-icon name="menu-sharp"></ion-icon>
+      </div>
+      <div class="icon">
+        <ion-icon name="home-outline"></ion-icon>
+        <p>Home</p>
+      </div>
+      <div class="icon">
+        <ion-icon name="compass-outline"></ion-icon>
+        <p>Explore</p>
+      </div>
+      <div class="icon">
+        <ion-icon name="albums-outline"></ion-icon>
+        <p>Library</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="topbar">
+        <img class="logo" src="assets/yt-logo.svg" alt="yt-logo" />
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search on YouTube" />
+          <button class="search-btn">
+            <ion-icon name="search"></ion-icon>
+          </button>
+          <div class="top-icon mic-icon">
+            <ion-icon name="mic-sharp"></ion-icon>
+          </div>
+        </div>
+        <div class="icons-wrapper">
+          <div class="top-icon">
+            <ion-icon name="videocam-outline"></ion-icon>
+          </div>
+          <div class="top-icon">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </div>
+          <div class="top-icon">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="content">CONTENT</div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

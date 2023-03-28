@@ -1,0 +1,61 @@
+inizio slide 23.00 minuto di registrazione
+vedere da minuto 44 per una cosa importante
+uri 
+universal resource identifier
+w3c
+dato un alfabeto di n caratteri che possono assumere k posizioni, il numero totale di combinazioni possibili è n^k
+2 caratteri
+8 posizioni 2^8 = 256
+Vedere dns - indirizzo IP, abbiamo quattro tripletta da 0 a 255, da 256 byte
+assenza intenzionale di un valore vuoto si chiama nal o nul
+Ipv4
+235.176.34.85
+Ipv6 (6 di doppiette da 2 valori numeri o alafabetici)
+aa.4e.56.bf.7c.e4 (MAC address)
+test su propmt per vedere DNS 
+Compilazione domanda su internet
+vedere smtp		
+TCP controlla tutti gli altri protocolli di trasferimento, adesso si chiama TCP/IP. 
+Rivedere da 1.29 ora di registrazione
+usare fuzilla per pubblicare pagine web, veedere bene poi a parte
+CONOSCENZA IMPORTANTE CHE TIPO DI COMPUTER ABBIAMO
+H1 da H6 si chiamano headings,livello di dimensione dei titoli e serve per indicizzare il testo
+				ARGOMENTI DEL GIORNO
+-W3C
+Il World Wide Web Consortium (W3C)[consorzio] è una comunità internazionale in cui le organizzazioni membri , 
+uno staff a tempo pieno e il pubblico lavorano insieme per sviluppare standard Web . 
+Guidato dall'inventore e direttore del Web Tim Berners-Lee , dal CEO ad interim Ralph Swick 
+e da un consiglio di amministrazione , la missione del W3C è portare il Web al suo pieno potenziale. 
+Contattare W3C per ulteriori informazioni.
+Che cosa significa "Standard web"? Cos'è una "raccomandazione"?
+Il W3C pubblica documenti che definiscono le tecnologie Web. Questi documenti seguono un processo progettato 
+per promuovere il consenso, l'equità, la responsabilità pubblica e la qualità. Al termine di questo processo, 
+il W3C pubblica le Raccomandazioni , che sono considerate standard Web.
+Browser e strumenti di creazioneCollegamento di intestazione
+L'utilità e la crescita del web dipendono dalla sua universalità. Dovremmo essere in grado di pubblicare
+indipendentemente dal software che utilizziamo, dal computer che abbiamo, dalla lingua che parliamo, dal fatto
+che siamo cablati o wireless, indipendentemente dalle nostre modalità sensoriali o di interazione. 
+Dovremmo essere in grado di accedere al Web da qualsiasi tipo di hardware in grado di connettersi a Internet,
+fisso o mobile, piccolo o grande. Il W3C facilita questo ascolto e la fusione tramite standard web internazionali. 
+Questi standard assicurano che tutto il folle splendore continui a migliorare un Web aperto a tutti noi.
+-URL (universale resource locator) o URI (universal resource identifier)
+-DNS
+Un sistema dei nomi di dominio o DNS (Domain Name System) traduce nomi comprensibili 
+come www.amazon.com in indirizzi IP utilizzati dai computer (ad esempio 192.0.2.44).
+-IP E LA SUA DEFINIZIONE
+Un indirizzo IP è un indirizzo univoco che identifica un dispositivo su Internet o in una rete locale. 
+IP è acronimo di "Internet Protocol", ovvero Protocollo Internet, l'insieme delle regole che disciplinano il formato 
+dei dati scambiati su Internet o sulla rete locale.
+-IPv4
+Ovvero 4 triplette da 0 a 255 come i byte
+tipo 235.176.34.85
+-IPv6 6 
+Di recente siamo quasi tutti identificati da un datagramma di 6 coppie di valori esadecimali, ovvero tutti i numeri da 0 a 9 
+e tutte le lettere da A a F.
+tipo aa.bg.c2.9g.r5.44. questo si chiama (Mac address)
+Un MAC address identifica una interfaccia di rete univoca presente in un dispositivo. Mentre gli indirizzi IP vengono
+ assegnati dagli ISP e possono essere riassegnati quando i dispositivi vengono collegati e scollegati, gli indirizzi MAC 
+sono legati a un adattatore fisico e vengono assegnati dai produttori.
+-FILEZILLA
+Tramite credenziali siamo in grado di pubblicare contenuti in rete dal nostro pc.
+Tramite un accurato procedimento.
