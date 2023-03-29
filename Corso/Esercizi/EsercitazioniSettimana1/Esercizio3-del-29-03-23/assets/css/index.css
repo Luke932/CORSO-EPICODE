@@ -51,8 +51,9 @@ video {
     font-style: italic;
     font-weight: bold;
 }
-form {
-    display: block;
+footer {
+    margin-bottom: 1rem;
 }
+    
 
 
