@@ -6,6 +6,7 @@ body {
     background-position: right;
     font-family: 'Poppins', sans-serif;
     color: #333;
+    background-image: url(../img/sfondo.png);
 }
 /* HEADER */
 header {
@@ -79,7 +80,10 @@ iframe {
 form  {
     background-color: #f3f3f3;
 }
-
+input {
+    border-bottom: dotted;
+    border-bottom-color: red;
+}
 
 
 
