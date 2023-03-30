@@ -1,0 +1,86 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    text-align: center;
+    background-position: right;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+/* HEADER */
+header {
+    background: linear-gradient(rgba(0,160,198,1), rgba(3,109,134,1) 70%);
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+}
+#container img {
+    max-width: 450px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+nav ul {
+        list-style-type: none;
+    }
+/* MAIN */
+main {
+    background-color: white;
+    text-align: left;
+    margin: 1rem;
+}
+#childs h1 + p {
+    color: #a0a0a0;
+}
+#childs ion-icon {
+    display: inline-block;
+}
+strong {
+    color: #a02571;
+}
+code {
+    border-radius: 5px;
+    background-color: #a0a0a0c4;
+}
+caption {
+    font-style: italic;
+    font-weight: bold;
+}
+th {
+    background-color: #3f6bca;
+    padding: 0.5em;
+    color: white;
+    border-right: 0px solid #f3f3f3;
+    font-weight: 400;
+}
+#finish a:link, a:visited {
+    text-decoration: none;
+    color: #3f6bca;
+}
+#finish a:hover {
+    text-decoration: underline;
+    color: red;
+}
+#table :nth-child() {
+    background-color: #f3f3f3;
+}
+iframe {
+    width:100%;
+    border-radius: 30px;
+}
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
