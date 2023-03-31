@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*Proprietà generali*/
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+    line-height: 1.65;
+    text-align: center;
+    max-width: 100%;
+    background-color: white;
+    font-weight: 700;
+}
+/*Proprietà intestazione*/
+header {
+    background-color: black;
+
+}
+
+header img {
+    padding: 4rem;
+    max-width: 100%;
+}
+
+nav {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    padding: 5rem;
+}
+
+nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 auto;
+    font-size: 4em;
+    margin-bottom: 2rem;
+}
+
+strong {
+    margin-bottom: 6rem;
+}
+
+nav a {
+    background-color: #f04c2f;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 auto;
+    width: 20%;
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+}
+/*Contenuto principale*/
+#content01 {
+    padding: 0 10rem 0 10rem;
+}
+
+#content01 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 999em;
+    -moz-border-radius: 999em;
+    -webkit-border-radius: 999em;
+    -o-border-radius: 999em;
+}
+
+#testim {
+    background-color: #e22d0e;
+    color: white;
+    font-size: 1.5em;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5rem;
+}
+
+#testim h2 {
+    color: white;
+
+}
+
+blockquote {
+    padding: 0 16rem 0 16rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+/*Contenuto Secondario*/
+#card .cards {
+    margin: 10.5rem;
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+}
+
+#card .cards img {
+    max-width: 100%;
+}
+/*Fine Pagina*/
+footer {
+    background-color: #25a2c3;
+    padding: 2rem;
+
+}
+
+footer h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+address p {
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+
+div {
+    line-height: 1;
+}
+
+hr {
+    width: 50%;
+}
+
+#copy {
+    font-weight: 300;
+    font-size: 0.5;
+}

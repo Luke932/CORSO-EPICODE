@@ -1,0 +1,48 @@
+Titolo: Corso Web Developer - Epicode school
+Description: Da zero a Epicode con i corsi completi per diventare uno sviluppatore professionista in 3 mesi.
+
+Corso Web Developer
+Smetti di inseguire i titoli, inizia a lavorare. Mentre tutti vogliono arricchire il CV, tu pensa ad arricchire le tue competenze.
+
+Tutti ti cercheranno
+Sono 30.000 in Italia le posizioni di developer scoperte, scegli quella che ti stimola di più.
+
+Lavora dove vuoi
+Lavora da casa, in riva al mare o in montagna.
+
+Scegli il tuo ruolo
+Potrai scegliere se essere Azienda, Freelance o Startup.
+
+Lavoro in libertà
+Non serve lavorare in ufficio per essere creatori di prodotti digitali.
+
+Epicode garantisce
+"3 mesi intensivi di corso che cambieranno radicalmente la tua vita".
+Mario Rossi
+CEO, Epicode
+
+Il tuo PC
+Se vuoi diventare developer è l’unico strumento di cui hai bisogno.
+
+Impara ora
+Impara da chi diventerai tra qualche anno, e diventa una rockstar come loro.
+
+Lavora subito
+Sappiamo cosa vogliono le aziende, perché lavoriamo con loro.
+
+
+Font
+Body: #393d41 – 1.2rem – Open Sans – interlinea 1.65
+Headings: #25a2c3 – Montserrat (bold) – interlinea 1.5
+Footer: #c8e7f0
+Footer Heading: white
+Footer link: #c8e7f0
+
+Colori sfondo
+Header: black
+Pulsante: #f04c2f – Montserrat (bold) – bold
+Testimonianze: #e22d0e
+Footer: #25a2c3
+
+Bordi
+Bordo schede: #dee1e3
