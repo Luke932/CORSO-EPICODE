@@ -1,11 +1,21 @@
 
 
-document.getElementById('Smile').innerHTML = 'pantera scritto da javascript';
+
 
 var text = 'testo da vedere in console';
 if (text = 'testo da vedere in console') {
-    console.log (text);
+    console.log(text);
 }
 
+var text01 = document.getElementById('Smile');
+if (text01 = document.getElementById('Smile'));
+console.log(text01)
 
-document.getElementById('Container').innerHTML = '<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</h2>'
+var nome = 'Javascript';
+
+if (nome === undefined) {
+    document.getElementById('Smile').innerHTML = 'La variabile è undefined';
+} else {
+    document.getElementById('Smile').innerHTML = 'Pantera scritto da ' + nome;
+}
+
