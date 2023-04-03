@@ -16,6 +16,10 @@ figure :hover {
 p {
     margin: 0;
 }
+figure:link, :visited {
+    text-decoration: none;
+    color: white;
+}
 
 a {
     text-decoration: none;

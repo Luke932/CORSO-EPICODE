@@ -2,10 +2,10 @@
 
 
 
-var text = 'testo da vedere in console';
-if (text = 'testo da vedere in console') {
-    console.log(text);
-}
+let nome1 = 'Ignazio';
+let testo = 'Ciao sono ';
+    console.log (testo + nome1);
+
 
 var text01 = document.getElementById('Smile');
 if (text01 = document.getElementById('Smile'));
