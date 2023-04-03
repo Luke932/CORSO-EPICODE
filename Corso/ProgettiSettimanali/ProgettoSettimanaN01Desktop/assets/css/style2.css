@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Your st@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /*Proprietà generali*/
 html {
@@ -11,26 +11,25 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #393d41;
     line-height: 1.65;
-    text-align: center;
     max-width: 100%;
     background-color: white;
     font-weight: 700;
+    text-align: center;
 }
+
 /*Proprietà intestazione*/
 header {
     background-color: black;
-
-}
-
-header img {
-    padding: 4rem;
+    padding: 1rem;
     max-width: 100%;
+    text-align: left;
 }
 
 nav {
     background-image: url(../img/banner.jpg);
     background-size: cover;
-    padding: 5rem;
+    padding: 10rem;
+    margin-bottom: 7rem;
 }
 
 nav h1 {
@@ -39,12 +38,18 @@ nav h1 {
     font-weight: bold;
     line-height: 1;
     margin: 0 auto;
-    font-size: 4em;
+    font-size: 2em;
     margin-bottom: 2rem;
 }
 
+nav p {
+    margin-right: 0;
+}
+
 strong {
-    margin-bottom: 6rem;
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1;
 }
 
 nav a {
@@ -58,18 +63,42 @@ nav a {
     padding: 1rem;
     text-decoration: none;
 }
+
 /*Contenuto principale*/
+
 #content01 {
-    padding: 0 10rem 0 10rem;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#content01 section {
+    display: inline-block;
+    
 }
 
 #content01 img {
-    width: 300px;
-    height: 300px;
-    border-radius: 999em;
-    -moz-border-radius: 999em;
-    -webkit-border-radius: 999em;
-    -o-border-radius: 999em;
+    border-radius: 50%;
+    width: 500px;
+    height: auto;
+    margin-block: 1.4em;
+    margin-left: 8rem;
+    margin-right: 4rem;
+}
+
+.contenuto {
+    width: 30%;
+    margin: 0 auto;
+    
+}
+
+.contenuto h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+    ;
+    margin: 0;
 }
 
 #testim {
@@ -95,6 +124,7 @@ h2 {
     color: #25a2c3;
     line-height: 1.5;
 }
+
 /*Contenuto Secondario*/
 #card .cards {
     margin: 10.5rem;
@@ -105,40 +135,4 @@ h2 {
 #card .cards img {
     max-width: 100%;
 }
-/*Fine Pagina*/
-footer {
-    background-color: #25a2c3;
-    padding: 2rem;
-
-}
-
-footer h2 {
-    font-size: 3em;
-    margin: 0;
-    color: white;
-}
-
-address p {
-    display: inline-block;
-    margin: 0;
-    line-height: 1;
-    font-style: normal;
-    font-weight: 300;
-    color: white;
-}
-address a {
-    color: white;
-}
-
-div {
-    line-height: 1;
-}
-
-hr {
-    width: 50%;
-}
-
-#copy {
-    font-weight: 300;
-    font-size: 0.5;
-}
+/*les here */

@@ -13,7 +13,7 @@
 <body>
     <header>
         <div>
-            <img src="assets/img/logo.svg" alt="logo del blog" />
+            <img src="assets/img/logo.svg" alt="logo del blog" width="300px" />
             <p>EPICODE - IL BLOG DEI DEVELOPERS</p>
         </div>
         <nav>
@@ -55,7 +55,7 @@
             </p>
 
             <p>Le varie aree saranno quindi suddivise in:</p>
-            <ul>
+            <ul id="li">
                 <li>
                     Contenuti di intestazione del tag
                     <code>&lt;header&gt;</code>
@@ -105,7 +105,7 @@
                         <th>Supporto browsers</th>
                     </tr>
                 </thead>
-                <tbody id="table">
+                <tbody>
                     <tr>
                         <td>2000</td>
                         <td>20&percnt;</td>
@@ -143,19 +143,19 @@
                 developers come loro:
             </p>
 
-            <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM"
+            <iframe width="300" height="250" src="https://www.youtube.com/embed/dvOvHXruEDM"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
-            <section>
-                <h2>Novità</h2>
+            <section id="form">
+                <h2>NOVITA'</h2>
                 <p>
                     Vuoi rimanere aggiornato su altre novità del blog?
                     Iscriviti alla nostra newsletter:
                 </p>
 
-                <form method="POST" action="elabora_form.php">
+                <form method="get" action="elabora_form.php">
                     <fieldset>
                         <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email"
                             required />
@@ -167,27 +167,27 @@
 
         <aside>
             <h2>Articoli correlati</h2>
-            <div id="finish">
+            <div id="article">
                 <a href="javascript:void(0)"
                     title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice
                     HTML</a>
-                <p>Categoria: develop</p>
-                <p>Data: 18-9-2020</p>
+                <p><ion-icon class="ion-icon" name="ticket-sharp"></ion-icon>Categoria: develop</p>
+                <p><ion-icon name="calendar-sharp"></ion-icon>Data: 18-9-2020</p>
             </div>
 
-            <div>
+            <div id="article">
                 <a href="javascript:void(0)"
                     title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la
                     sintassi</a>
-                <p>Categoria: develop</p>
-                <p>Data: 16-9-2020</p>
+                <p><ion-icon name="ticket-sharp"></ion-icon>Categoria: develop</p>
+                <p><ion-icon name="calendar-sharp"></ion-icon>Data: 16-9-2020</p>
             </div>
 
-            <div>
+            <div id="article">
                 <a href="javascript:void(0)" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
                     pagina</a>
-                <p>Categoria: ottimizzazione</p>
-                <p>Data: 30-9-2020</p>
+                <p><ion-icon name="ticket-sharp"></ion-icon>Categoria: ottimizzazione</p>
+                <p><ion-icon name="calendar-sharp"></ion-icon>Data: 30-9-2020</p>
             </div>
         </aside>
     </main>
@@ -195,13 +195,13 @@
     <hr />
 
     <footer>
-        <p>Blog Epicode &copy;2021</p>
-        <address>
+        <h2>Blog Epicode &copy;2021</h2>
+        <p>
             Testata online di Mario Rossi, registrata con prot. n.213/2018 -
             via Luigi Einaudi 2 - Milano. P.IVA 00112233.
             <a href="mailto:info@epicode.school"
                 title="contattami per informazioni/lavoro/privacy">info@epicode.school</a>
-        </address>
+        </p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
