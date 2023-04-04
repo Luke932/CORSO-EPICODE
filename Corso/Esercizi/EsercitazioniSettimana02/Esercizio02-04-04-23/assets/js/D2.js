@@ -51,7 +51,7 @@ console.log(x);
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 var myName1 = 'Luca ';
-var myName1 = 'Giacalone ';
+myName1 = 'Giacalone ';
 const myName2 = 'Ignazio'; 
 document.getElementById('assegnation').innerHTML = myName1 + myName2;
 console.log(myName1 + myName2);
@@ -61,7 +61,6 @@ console.log(myName1 + myName2);
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
-var x = 12;
 document.getElementById('sottrazione').innerHTML = x - 4;
 console.log(x-4);
 /* SCRIVI QUI LA TUA RISPOSTA */
