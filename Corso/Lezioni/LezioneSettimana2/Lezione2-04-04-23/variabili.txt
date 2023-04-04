@@ -1,0 +1,11 @@
+GLOBAL SCOPE: AMBITO GLOBALE
+Le variabili sono dichiarate al di fuori di ogni blocco di codice e possono essere utilizzate ovunque.
+Generalmente sono dichiarate con VAR
+
+LOCAL SCOPE: AMBITO LOCALE
+Le variabili sono dichiarate all'interno di una FUNZIONE (insieme di istruzioni operative che può essere utilizzato in qualsiasi parte dell'applicazione) e possono essere utilizzate SOLO all'interno della loro funzione.
+Generalmente sono dichiarate con LET 
+
+BLOCK SCOPE: AMBITO DI BLOCCO
+Le variabili sono dichiarate all'interno di un blocco di codice delimitato dalle parentesi graffe e possono esssere utilizzate SOLO all'interno del loro blocco.
+Sono dichiarate con LET (si dichiarano con var quando devono poter essere utiilizzate anche AL DI FUORI del loro blocco).
