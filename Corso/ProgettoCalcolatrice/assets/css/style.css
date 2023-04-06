@@ -1,0 +1,67 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    border-style: border-box;
+    font-family: sans-serif;
+}
+
+.calculator, .keys, button{
+    border-radius: 30px;
+}
+
+.container{
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.key_action{
+    display: inline-block;
+}
+
+.calculator{
+    color: white;
+    background-color: rgb(36, 36, 36);
+    margin-top: 100px;
+}
+
+.display{
+    padding-bottom: 200px;
+}
+
+.keys{
+    background-color: rgb(46, 46, 46);
+    padding: 15px;
+}
+
+.key_action{
+    margin: 5px;
+}
+
+.key_action button{
+    font-size: 1.5em;
+    background-color: rgb(46, 46, 46);
+    width: 50px;
+    height: 50px;
+}
+
+.green{
+    color: green;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.red{
+    color: red;
+}
+
+.white{
+    color: white;
+}
+
+button:active{
+    color: orange;
+}
+

@@ -55,7 +55,7 @@ myName1 = 'Giacalone ';
 const myName2 = 'Ignazio'; 
 document.getElementById('assegnation').innerHTML = myName1 + myName2;
 console.log(myName1 + myName2);
-// const myName2 = 'Vito'; // Dimostrazione che una costante non può cambiare tipo di valore.
+// myName2 = 'Vito'; // Dimostrazione che una costante non può cambiare tipo di valore.
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6

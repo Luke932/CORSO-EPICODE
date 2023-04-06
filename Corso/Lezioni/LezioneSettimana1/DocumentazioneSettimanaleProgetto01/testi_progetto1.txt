@@ -46,3 +46,141 @@ Footer: #25a2c3
 
 Bordi
 Bordo schede: #dee1e3
+
+
+
+nav {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    padding: 10rem;
+    margin-bottom: 7rem;
+}
+
+nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+nav p {
+    margin-right: 0;
+}
+strong {
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+nav a {
+    background-color: #f04c2f;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 auto;
+    width: 20%;
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+}
+/*Contenuto principale*/
+main {
+    text-align: left;
+}
+#content01 {
+    padding: 0 10rem 0 10rem;
+    display: inline-block;
+}
+#content01 section {
+    display: inline;
+    margin: 0 auto;
+}
+
+section h2,p {
+    width: 50%;
+}
+
+#content01 img {
+    width: 500px;
+    height: 500px;
+    border-radius: 999em;
+    -moz-border-radius: 999em;
+    -webkit-border-radius: 999em;
+    -o-border-radius: 999em;
+    display: inline;
+    text-align: left;
+}
+
+#testim {
+    background-color: #e22d0e;
+    color: white;
+    font-size: 1.5em;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5rem;
+}
+
+#testim h2 {
+    color: white;
+
+}
+
+blockquote {
+    padding: 0 16rem 0 16rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+/*Contenuto Secondario*/
+#card .cards {
+    margin: 10.5rem;
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+}
+
+#card .cards img {
+    max-width: 100%;
+}
+/*Fine Pagina*/
+footer {
+    background-color: #25a2c3;
+    padding: 2rem;
+
+}
+
+footer h2 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+
+address p {
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+}
+address a {
+    color: white;
+}
+
+div {
+    line-height: 1;
+}
+
+hr {
+    width: 50%;
+}
+
+#copy {
+    font-weight: 300;
+    font-size: 0.5;
+}
