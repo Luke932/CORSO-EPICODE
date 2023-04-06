@@ -95,8 +95,8 @@ else {
 let amount = (totalShoppingCart + delivery);
 
 if (totalShoppingCart < 50) {
-  console.log(totalShoppingCart + delivery);
-} else console.log('totale da pagare: ' + amount);
+  console.log(amount);
+} else console.log('totale da pagare: ' + totalShoppingCart);
 // Questa è un'altra soluzione
 
 if (totalShoppingCart2 > 50) {
