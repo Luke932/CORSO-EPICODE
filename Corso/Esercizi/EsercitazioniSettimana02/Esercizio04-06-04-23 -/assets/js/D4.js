@@ -122,9 +122,34 @@ console.log(characters);
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci un oggetto con questa struttura: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
+  Successivamente usando un for loop, cicla l'array "starWarsCharacters" e inserisci nell'array femaleCharacters gli oggetti con gender = 'female' limitatamente alle proprietà dell'oggetto già inserito.
 */
 
 const femaleCharacters = [];
+
+femaleCharacters.push = { name: "Leia Organa", hair_color: "brown", eye_color: "brown" };
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i] === 'female') {
+    femaleCharacters.push(starWarsCharacters[1]);
+  }
+};
+console.log(femaleCharacters);
+// Questa è una soluzione
+
+const femaleCharacters2 = [];
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  const character = starWarsCharacters[i];
+
+  if (character.gender === 'female') {
+    const characterObj = {
+      name: character.name,
+      hair_color: character.hair_color,
+      eye_color: character.eye_color,
+    };
+    femaleCharacters2.push(characterObj);
+  }
+}
 
 
 /* ESERCIZIO 4
@@ -178,7 +203,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 
 let i = 0;
 let totMassa = 0;
-while(i < starWarsCharacters.length){
+while (i < starWarsCharacters.length) {
   totMassa += parseInt(starWarsCharacters[i].mass)
   i++
 }
@@ -199,31 +224,38 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-switch (true){
+switch (true) {
   case totMassa < 500:
     console.log('Ship is under loaded');
     break;
 
-    case totMassa === 500:
+  case totMassa === 500:
     console.log('Ship is half loaded');
     break;
 
-    case totMassa > 1000:
-      console.log('DANGER! OVERLOAD ALERT: Jump ship now!');
-      break;
+  case totMassa > 1000:
+    console.log('DANGER! OVERLOAD ALERT: Jump ship now!');
+    break;
 
-    case totMassa > 900:
+  case totMassa > 900:
     console.log('Critical Load: Over 900');
     break;
 
-    case totMassa > 700:
-      console.log('Warning: Load is over 700');
-      break;
+  case totMassa > 700:
+    console.log('Warning: Load is over 700');
+    break;
 }
 
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
+
+for (i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender === 'n/a') {
+    starWarsCharacters[i].gender = 'robot'
+  }
+}
+console.log(starWarsCharacters);
 
 /* EXTRA ESERCIZIO 9
 
@@ -235,6 +267,36 @@ Usa uno più for loop per raggiungere il risultato
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
 
+console.log('CHARACTERS BEFORE', characters.length);
+
+for (let i = 0; i < characters.length; i++) {
+  const character = characters[i];
+
+  for (let j = 0; j < femaleCharacters.length; j++) {
+    const femCharacter = femaleCharacters[j];
+
+    if (femCharacter.name === character) {
+      console.log('FEMALE', character);
+      characters.splice(i, 1);
+    }
+  }
+}
+console.log('CHARACTERS AFTER', characters.length);
+
+
+for (let x = 0; x < characters.length; x++) {
+  for (let y = 0; y < femaleCharacters.length; y++) {
+    if (characters[x] === femaleCharacters[y].name) {
+      characters.splice(x, 1);
+    }
+  }
+}
+console.log(characters);
+
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+const characterRandom = Math.floor(Math.random() * starWarsCharacters.length)
+const randomArrey = starWarsCharacters[characterRandom];
+console.log('Il valore generato casualmente nel valore mass è:', randomArrey.mass);
+
