@@ -46,6 +46,10 @@ function scambia(pets, x, y) {
   pets[y] = z;
 }
 
+const first = pets.splice(0, 1);
+pets.push(first[0]);
+console.log(pets);
+
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta e stampa l'array in console.
 */
