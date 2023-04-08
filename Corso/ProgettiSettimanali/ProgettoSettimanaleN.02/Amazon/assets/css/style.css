@@ -29,7 +29,11 @@ header img {
   margin: 0.5rem 2rem 1rem 2rem;
 }
 
-nav,
+nav {
+  background-color: #364759;
+  padding: 0.5rem;
+}
+
 p,
 a {
   background-color: #364759;
@@ -45,7 +49,6 @@ li {
   list-style: none;
   display: inline;
   padding: 0.6rem;
-
 }
 
 #container {
@@ -83,8 +86,12 @@ h3 {
   background-color: #ffffff;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  text-align: center;
 }
 
+.textsec{
+  text-align: left;
+}
 span {
   color: #08595b;
   font-size: 0.8em;
@@ -98,12 +105,13 @@ h2 {
 }
 
 .imgsec img {
-  width: 300px;
+  width: 20%;
   height: 380px;
-  margin: 0 1rem 0 2rem;
+  margin: 0 1.5rem 0 1.5rem;
   border-radius: 20px;
   box-shadow: 10px 10px 5px #e9edee;
 }
+
 
 .imgsec2 {
   text-align: center;
