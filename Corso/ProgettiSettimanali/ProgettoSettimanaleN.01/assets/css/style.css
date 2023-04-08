@@ -10,7 +10,7 @@ body {
     font-size: 1.2rem;
     font-family: 'Open Sans', sans-serif;
     color: #393d41;
-    line-height: 1.65;
+    line-height: 1.1;
     text-align: center;
     max-width: 100%;
     background-color: white;
@@ -31,6 +31,7 @@ nav {
     background-image: url(../img/banner.jpg);
     background-size: cover;
     padding: 5rem;
+    background-position: center;
 }
 
 nav h1 {
@@ -39,7 +40,7 @@ nav h1 {
     font-weight: bold;
     line-height: 1;
     margin: 0 auto;
-    font-size: 4em;
+    font-size: 3em;
     margin-bottom: 2rem;
 }
 
@@ -60,7 +61,7 @@ nav a {
 }
 /*Contenuto principale*/
 #content01 {
-    padding: 0 10rem 0 10rem;
+    padding: 0 5rem 0 5rem;
 }
 
 #content01 img {
@@ -87,7 +88,18 @@ nav a {
 }
 
 blockquote {
-    padding: 0 16rem 0 16rem;
+    font-size: 0.7em;
+    font-style: oblique;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+cite {
+    font-size: 0.8em;
+    font-style: normal;
+}
+span {
+    font-size: 0.6em;
+    margin: 0;
 }
 
 h2 {
@@ -97,7 +109,7 @@ h2 {
 }
 /*Contenuto Secondario*/
 #card .cards {
-    margin: 10.5rem;
+    margin: 5rem;
     border: 1px solid #dee1e3;
     border-radius: 5px;
 }
