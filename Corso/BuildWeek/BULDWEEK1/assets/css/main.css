@@ -1,0 +1,1015 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    --glow-color: hsl(186 100% 69%);
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    width: 80%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+/*======= STILE HEADER ========*/
+header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    display: inline-block;
+    height: 50px;
+}
+
+/*==================================================================================================================================*/
+
+/*=======                 STILE MAIN CONTAINER                    ========*/
+.container {
+    display: inline-block;
+}
+
+#main {
+    width: 80%;
+}
+
+li, p {
+    color: white;
+    font-family: Outfit, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+}
+
+h1, h3, h2, h5 {
+    color: white;
+    font-family: Outfit, sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 6em;
+    line-height: 0.8;
+    margin-bottom: 0.6em;
+}
+
+
+span {
+    font-weight: bolder;
+}
+
+h3 {
+    margin: 0;
+    color: #c2128d;
+    font-size: 2.5rem;
+}
+
+input {
+    display: inline-block;
+    accent-color: white;
+    font-family: Outfit, sans-serif;
+}
+
+/*==================================================================================================================================*/
+
+/*=======                  STILE PAGINA INIZIALE                 ========*/
+
+
+#btn {
+    background-color: #00ffff;
+    height: 50px;
+    width: 180px;
+    color: black;
+    margin-left: 300px;
+    font-weight: bold;
+    font-family: Outfit, sans-serif;
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 4px 4px rgba(0, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    padding: 0 1.5em;
+}
+#btn:hover{
+    box-shadow: 0px 0px 7px 7px rgba(0, 255, 255, 0.4);
+    color: #0c113b;
+}
+/*==================================================================================================================================*/
+
+/*=======                  STILE PULSANTE PROCEED PAGINA QUIZ                 ========*/
+#btn1 {
+    background-color: #00ffff;
+    height: 50px;
+    width: 180px;
+    color: black;
+    font-weight: bold;
+    font-family: Outfit, sans-serif;
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 4px 4px rgba(0, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+#btn1:hover{
+    box-shadow: 0px 0px 7px 7px rgba(0, 255, 255, 0.4);
+}
+
+#pericoloso label{
+    margin: 0;
+}
+
+.difficulty {
+    visibility: hidden;
+}
+/*==================================================================================================================================*/
+
+/*=======                   STILE CHECKBOX PAGINA INZIALE                    ========*/
+fieldset {
+    border: none;
+}
+
+#spa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+#cb {
+    display: none;
+    box-sizing: border-box;
+    accent-color: rgba(0, 0, 0, 0.0);
+    border-color: white;
+    border: 2px solid white;
+    content: "";
+    outline: none;
+}
+
+#cb:checked {
+    opacity: 0;
+    accent-color: white;
+}
+
+input[type="checkbox"]:checked+label:before {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 0.2em;
+    border: 2px solid #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: white;
+    box-shadow: 0 0 0 1px #000;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    content: "";
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid white;
+    border-radius: 0.2em;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: -2px -1px 0 #343a3f;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+input[type="checkbox"]:not(:checked) {
+    accent-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    opacity: 0;
+}
+
+#label {
+    color: white;
+    font-weight: bold;
+    font-family: Outfit, sans-serif;
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+}
+
+/*==================================================================================================================================*/
+
+/*=======                   STILE PAGINA QUIZ                    ========*/
+#timer {
+    display: inline-block;
+}
+
+.radio {
+    display: inline-block;
+    border-radius: 14px;
+    opacity: 0;
+}
+
+#question {
+    color: white;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5;
+    font-size: 3.0rem;
+    font-weight: 100;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5;
+}
+
+.formContainer {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.label {
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 1.2px;
+    border-radius: 28px;
+    padding-top: 18px;
+    margin: 10px 10px;
+    background:
+        linear-gradient(#272952 0 0) padding-box,
+        /*this is your grey background*/
+        linear-gradient(to right, white, rgba(255, 255, 255, 0.3)) border-box;
+    border: 5px solid transparent;
+}
+
+input[type="radio"]:checked+label {
+    background:
+        linear-gradient(to top, #a70285, #c4008f) padding-box,
+        /*this is your grey background*/
+        linear-gradient(to right, white, rgba(255, 255, 255, 0.3)) border-box;
+}
+
+#counter {
+    color: white;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5;
+    font-size: 1.4rem;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*============ STILE TIMER ============== -------------------------> MARCO
+#timer {
+    display: inline-block;
+}
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 30;
+}
+
+div[role="progressbar"] {
+    --size: 12rem;
+    --fg: #00ffff;
+    --bg: rgba(255, 255, 255, 0.3);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, #8d007a 80%, transparent 0 99.9%, #8d007a 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 3.33%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    background-color: transparent;
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '';
+}*/
+
+/*============ STILE TIMER ============== -------------------------> FLAVIO*/
+
+#timerText2 {
+    font-size: 28px;
+}
+
+#timerText1, #timerText2, #timerText3 {
+    fill: rgb(255, 255, 255);
+    font-family: "Outfit";
+    text-shadow: 4px 4px 20px black;
+}
+
+#timerText1, #timerText3 {
+    font-size: 6px;
+}
+
+/*==================================================================================================================================*/
+
+/*=======                   STILE PAGINA DEI RISULTATI                    ========*/
+
+#titoloRes {
+    color: white;
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+#summaryText {
+    font-weight: 200;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+/*====== PULSANTE RATE US ======*/
+
+#rateUs {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 0.8em 3em 0.8em 3em;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#rateUs:hover {
+    background-color: #00ffff;
+    color: rgb(2, 3, 83);
+    border: 2px solid #00ffff;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#rUS {
+    text-decoration: none;
+}
+
+
+#cakeResults {
+    text-align: center;
+    margin: 0 auto;
+    width: 35%;
+    max-width: 100%;
+}
+
+canvas {
+    margin-bottom: 3rem;
+}
+
+#textBtn {
+    box-sizing: border-box;
+    height: 99vh;
+}
+
+#cake {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 7px 7px rgba(0, 255, 255, 0.4);
+    color: #0c113b;
+}
+
+
+/*====== CORRECT-WRONG ======*/
+
+#corrette {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2em;
+    float: left;
+    margin-top: 15rem;
+}
+
+#sbagliate {
+    color: rgba(255, 255, 255, 0.5);
+    ;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2em;
+    float: right;
+    margin-top: 15rem;
+    font-weight: bold;
+}
+
+
+/*=======                   STILE PAGINA FEEDBACK                    ========*/
+#moreInfo {
+    background-color: #00ffff;
+    color: rgb(2, 3, 83);
+    border: 2px solid #00ffff;
+    padding: 0.8em 3em 0.8em 3em;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 4px rgba(0, 255, 255, 0.4);
+}
+
+#moreInfo:hover{
+    box-shadow: 0px 0px 7px 7px rgba(0, 255, 255, 0.4);
+}
+
+#feedPlaceHolder {
+    padding: 0px 30px 5px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 25px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid #c2128d;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#stelline {
+    /*per mettere le stelline centrali*/
+    text-align: center;
+}
+
+.star-transition {
+    transition: fill 0.4s ease-in-out;
+    /*smooth in fase di selezione delle stelline*/
+}
+
+path {
+    /*shadow per le stelline*/
+    filter: drop-shadow(0px 0px 5px #00ffff33);
+}
+
+/*=======                   PAGINA DI ERRORE                    ========*/
+#back {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#back a {
+    color: rgb(39, 9, 56);
+}
+
+#back h2 {
+    font-family: Outfit, sans-serif;
+    color: #c2128d;
+    font-size: 3em;
+}
+
+#back h4 {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+/* Pulsante per tornare alla pagina iniziale Welcome Page */
+
+.glowing_btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    /* Questa opzione imposta il "riflesso" della luce in basso */
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+}
+
+.glowing_txt {
+    /* Animazione del testo */
+    float: left;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+        0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+}
+
+.faulty_letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+    /* Questo parametro aggiunge animazioni più indipendenti tra le varie aree del testo */
+}
+
+.glowing_btn::before {
+    /* Questo selettore fa le varie impostazioni quando ci si va sopra con il mouse */
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+
+.glowing_btn::after {
+    /* Questo selettore ferma le animazioni quando ci si va su con il mouse */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+
+.glowing_btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+}
+
+.glowing_btn:hover .glowing_txt {
+    /* Questo selettore blocca animazione della parte testo quando ci si va su con il mouse */
+    animation: none;
+}
+
+.glowing_btn:hover .faulty_letter {
+    /* Questo selettore blocca animazione della parte testo quando ci si va su con il mouse */
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.glowing_btn:hover:before {
+    /* Questo selettore espande il "riflesso" in basso quando ci si va su con il mouse */
+    filter: blur(1.5em);
+    opacity: 1;
+}
+
+.glowing_btn:hover:after {
+    /* Questo selettore fa apparire il colore di background */
+    opacity: 1;
+}
+
+@keyframes faulty-flicker {
+
+    /* Questo keyframe rende le animazioni indipendenti uno dal'altra */
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 0.1;
+    }
+
+    4% {
+        opacity: 0.5;
+    }
+
+    19% {
+        opacity: 0.5;
+    }
+
+    21% {
+        opacity: 0.1;
+    }
+
+    23% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    83% {
+        opacity: 0.4;
+    }
+
+    87% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 0.1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    72% {
+        opacity: 0.2;
+    }
+
+    77% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes border-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0.1;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* pagina risultato */
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="resultbar"] {
+    --size: 22rem;
+    --fg: #c2128d;
+    --bg: #00ffff;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, #0c113b 80%, transparent 0 99.9%, #0c113b 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+}
+
+div[role="resultbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '';
+    margin: 0;
+    position: relative;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: none;
+}
+
+.centerVertical {
+    position: relative;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 300px;
+}
+
+h5 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.small {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+#correct {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    font-family: Outfit, sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.5;
+    font-size: 2.8rem;
+}
+
+#wrong {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    font-family: Outfit, sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.5;
+    font-size: 2.8rem;
+}
+
+#resultBar {
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    vertical-align: middle;
+}
+
+.rq {
+    font-weight: 100;
+    letter-spacing: 1.5;
+    font-size: 1.1rem;
+}
+
+.vertical {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.list {
+    vertical-align: middle;
+    display: inline-block;
+    width: 25%;
+}
+
+.central {
+    width: 35%;
+}
+
+#containerList {
+    display: block;
+    width: 100%;
+}
+/* Pulsante Rate Us */
+#buttonRate {
+    height: 60px;
+    border: 2px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 4px 4px rgba(0, 255, 255, 0.4);
+    color: #0c113b;
+    color: white;
+    padding: 15px 60px;
+    font-family: Outfit, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+#buttonRate:hover{
+    background-color: #00ffff;
+    color: black;
+    box-shadow: 0px 0px 7px 7px rgba(0, 255, 255, 0.4);
+    border: solid #00ffff;
+}
+
+#subtitle {
+    font-family: Outfit, sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2em;
+}
+
+.bolder {
+    font-weight: 800;
+}
+
+#white {
+    color: white;
+    font-size: 3em;
+}
+
+/* pagina rate */
+
+h4 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-family: Outfit, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+#rateTitle {
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.off {
+    content: url('../img/star2.svg');
+}
+
+.on {
+    content: url('../img/star.svg');
+}
+
+.star {
+    margin: 0 auto;
+}
+
+#rateContainer>li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+input[type="text"] {
+    width: 800px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: Outfit, sans-serif;
+    letter-spacing: 1.5px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #a70285;
+}
+
+input[type="text"]::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #564d57;
+    opacity: 1;
+}
+
+#btn4 {
+    background-color: #00ffff;
+    height: 50px;
+    width: 180px;
+    color: black;
+    font-weight: bold;
+    font-family: Outfit, sans-serif;
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 7px 7px rgba(0, 255, 255, 0.4);
+    border: none;
+    margin-top: 45px;
+}
+
+/*extra*/
+
+.dLabel {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #c2128d;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+.difficulty {
+    margin: 15px 10px;
+}
+
+#popup {
+    Width: 300px;
+    padding: 10px 20px;
+    Background: gray;
+    Box-sizing: border-box;
+    /* for inside padding */
+    Padding: 10px;
+    background:
+    linear-gradient(#0c113b 0 0) padding-box,
+    /*this is your grey background*/
+    linear-gradient(to top, #c4008f, #0c113b) border-box;
+border: 5px solid transparent;
+    /* for center */
+    Position: absolute;
+    top: 10%;
+    left: 50%;
+    Transform: translate(-50%, -50%);
+    /* for hider */
+    display: none;
+}
+
+#popup>h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*=======                   SELETTORI GENERALI                    ========*/
+#spanTitle {
+    font-weight: 700;
+}
+
+.purple {
+    color: #c2128d;
+}
+
+.green {
+    color: #00ffff;
+}
+
+form > #spa input[type="radio"]{
+    opacity: 0;
+}
