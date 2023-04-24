@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: rgb(0, 132, 255);
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}
+p,h2,h3 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+
+}

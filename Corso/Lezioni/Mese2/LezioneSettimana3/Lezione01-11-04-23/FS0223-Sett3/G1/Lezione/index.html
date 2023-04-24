@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scommesse</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="titolo">
+            <h1>Indovina il numero</h1>
+        </div>
+    </div>
+    <div id="gioco">
+        <h3>Due giocatori inseriscono due numeri DIVERSI e DIVERSI DA ZERO; il sistema estrarrà un numero casuale da 1 a
+            100 e verificherà chi dei due giocatori ha indovinato o chi si è avvicinato di più.</h3>
+    </div>
+
+    <hr>
+
+    <div id="form">
+        <fieldset>
+            <label for="giocatore1">Giocatore 1</label>
+            <input type="number" name="giocatore1" id="giocatore1">
+            <label for="giocatore2">Giocatore 2</label>
+            <input type="number" name="giocatore2" id="giocatore2">
+            <button type="button" id="verifica">VERIFICA</button>
+            <button type="button" id="reset">GIOCA DI NUOVO</button>
+        </fieldset>
+        <h2 id="estratto"></h2>
+        <h2 id="risultato"></h2>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
