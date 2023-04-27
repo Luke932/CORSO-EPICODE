@@ -16,7 +16,7 @@ var percentualeCorr = ((results / count) * 100); //percentuale di risposte corre
 var percentualeIncorr = 100 - percentualeCorr; //percentuale di risposte non corrette
 var frazCorr = `${results} / ${count}`; //frazione di risposte corrette 
 var frazIncorr = `${count - results} / ${count}`; //frazione di risposte corrette 
-
+console.log(percentualeCorr);
 var cakeT = document.getElementById('cake').getContext('2d'); // funzione predefinita per dire dove sta questo grafico e che sarà 2d.
 
 // Definisco i dati da mostrare nel grafico
