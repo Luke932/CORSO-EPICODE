@@ -1,92 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 
-html,body {
+html,
+body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-  }
-  
-  body {
+    width: 100vw;
     margin: 0;
     padding: 0;
-  }
-  
-  ol, ul {
+}
+
+
+
+ol,
+ul {
     list-style: none;
     font-size: 1.2em;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
-  }
+}
 
-  header {
+header {
     background-color: #ffc017;
-  }
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 1;
+}
 
-
-  .containerHeader {
-    margin: 0 auto;
+.headCont {
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
     width: 75%;
+}
+
+.containerHeader {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    margin-left: 225px;
-  }
+    background-color: #ffc017;
+}
 
-  nav ul {
+nav ul {
     display: flex;
-  }
+}
 
-  nav li {
+nav li {
     padding: 0.8rem;
     cursor: pointer;
-  }
+}
 
-  nav li:last-child{
+nav li:last-child {
     background-color: black;
     color: white;
     border-radius: 100px;
-  }
+}
 
-  .stay {
-   border-top: 1px solid black;
-   border-bottom: 1px solid black;
-   display: flex;
-   margin-bottom: 2rem;
-   position: relative;
-   top: 60px;
-   
-  }
-
-
-  .stayCurios {
+.curios {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 85%;
+    justify-content: flex-end;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
     font-family: 'Spectral', serif;
-    max-width: 800px;
-    height: 400px;
-   }
+    padding: 3rem 0 3rem 0;
+}
 
-  .stayCurios h2 {
+.stay {
+    background-color: #ffc017;
+    padding-top: 6rem;
+    display: flex;
+    width: 87.5%;
+}
+
+
+.stayCurios h2 {
     font-size: 8em;
     margin: 0;
-  }
+}
 
-  .stayCurios h3 {
+.stayCurios h3 {
     font-size: 2.5em;
     margin: 0;
     line-height: 36px;
     color: rgba(41, 41, 41, 1);
-  }
+}
 
-  .stayCurios button {
+.stayCurios button {
     background-color: black;
     color: white;
     border-radius: 100px;
@@ -95,71 +103,83 @@ html,body {
     font-size: 1.5em;
     position: relative;
     top: 50px;
-  }
+}
 
-  .trending {
+.lastNews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending {
     margin: 0 auto;
     width: 75%;
-  }
+}
 
-  .trending div {
+.trending div {
     display: flex;
     font-size: 1.5em;
-  }
+}
+
+.border {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.containerSecArt {
+    position: sticky;
+}
 
 #sections {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     width: 75%;
-    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 4rem;
 }
 
-  .articles {
-    margin: 0 auto;
-    width: 25%;
+.articles {
+    width: 27.5%;
     padding: 0;
     margin: 1rem;
-  } 
+}
 
-  .articles :first-child {
+.articles :first-child {
     display: flex;
-  }
+}
 
-  .articles > .a{
+.articles>.a {
     position: relative;
     left: 130px;
-  }
+}
 
-  .articles > .b{
+.articles>.b {
     position: relative;
     left: 130px;
     color: #8b8888;
     display: flex;
-  }
+}
 
 
-  .articles > div > h4 {
+.articles>div>h4 {
     color: #e7e7e7;
     font-size: 3em;
     margin: 0;
     padding: 0.5rem;
     position: relative;
     bottom: 10px;
-  }
+}
 
-  .articles div img {
+.articles div img {
     border-radius: 100%;
     margin-right: 1rem;
-  }
+}
 
-  .articles div p {
+.articles div p {
     font-size: 1em;
     margin: 0;
     font-weight: bolder;
-  }
+}
 
-.articles > div > .section {
+.articles>div>.section {
     display: flex;
     align-items: center;
 }
@@ -168,46 +188,46 @@ html,body {
     width: 60%;
     padding: 0;
     margin: 1rem;
-  } 
+}
 
-  .articlesus :first-child {
+.articlesus :first-child {
     display: flex;
-  }
+}
 
-  .articlesus > .a{
+.articlesus>.a {
     position: relative;
     left: 130px;
-  }
+}
 
-  .articlesus > .b{
+.articlesus>.b {
     position: relative;
     left: 130px;
     color: #8b8888;
     display: flex;
-  }
+}
 
 
-  .articlesus > div > h4 {
+.articlesus>div>h4 {
     color: #e7e7e7;
     font-size: 3em;
     margin: 0;
     padding: 0.5rem;
     position: relative;
     bottom: 10px;
-  }
+}
 
-  .articlesus div img {
+.articlesus div img {
     border-radius: 100%;
     margin-right: 1rem;
-  }
+}
 
-  .articlesus div p {
+.articlesus div p {
     font-size: 1em;
     margin: 0;
     font-weight: bolder;
-  }
+}
 
-.articlesus > div > .section {
+.articlesus>div>.section {
     display: flex;
     align-items: center;
 }
@@ -216,6 +236,7 @@ html,body {
     margin: 0 auto;
     width: 75%;
     display: flex;
+    padding-top: 3rem;
 }
 
 .sectionArt {
@@ -260,12 +281,13 @@ html,body {
 .e div p {
     margin-right: 1rem;
 }
+
 .link h2 {
     font-size: 1.4em;
 }
 
 .linkA a {
-    border: 1px solid #e7e7e7 ;
+    border: 1px solid #e7e7e7;
     color: #8b8888;
     padding: 0rem 1rem 0rem 1rem;
     margin: 0.5rem;
