@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+html,body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol, ul {
+    list-style: none;
+    font-size: 1.2em;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  header {
+    background-color: #ffc017;
+  }
+
+
+  .containerHeader {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin-left: 225px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    padding: 0.8rem;
+    cursor: pointer;
+  }
+
+  nav li:last-child{
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+  }
+
+  .stay {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   display: flex;
+   margin-bottom: 2rem;
+   position: relative;
+   top: 60px;
+   
+  }
+
+
+  .stayCurios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+    font-family: 'Spectral', serif;
+    max-width: 800px;
+    height: 400px;
+   }
+
+  .stayCurios h2 {
+    font-size: 8em;
+    margin: 0;
+  }
+
+  .stayCurios h3 {
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 36px;
+    color: rgba(41, 41, 41, 1);
+  }
+
+  .stayCurios button {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    font-size: 1.5em;
+    position: relative;
+    top: 50px;
+  }
+
+  .trending {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .trending div {
+    display: flex;
+    font-size: 1.5em;
+  }
+
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 75%;
+    justify-content: space-between;
+}
+
+  .articles {
+    margin: 0 auto;
+    width: 25%;
+    padding: 0;
+    margin: 1rem;
+  } 
+
+  .articles :first-child {
+    display: flex;
+  }
+
+  .articles > .a{
+    position: relative;
+    left: 130px;
+  }
+
+  .articles > .b{
+    position: relative;
+    left: 130px;
+    color: #8b8888;
+    display: flex;
+  }
+
+
+  .articles > div > h4 {
+    color: #e7e7e7;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .articles div img {
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+
+  .articles div p {
+    font-size: 1em;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+.articles > div > .section {
+    display: flex;
+    align-items: center;
+}
+
+.articlesus {
+    width: 60%;
+    padding: 0;
+    margin: 1rem;
+  } 
+
+  .articlesus :first-child {
+    display: flex;
+  }
+
+  .articlesus > .a{
+    position: relative;
+    left: 130px;
+  }
+
+  .articlesus > .b{
+    position: relative;
+    left: 130px;
+    color: #8b8888;
+    display: flex;
+  }
+
+
+  .articlesus > div > h4 {
+    color: #e7e7e7;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .articlesus div img {
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+
+  .articlesus div p {
+    font-size: 1em;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+.articlesus > div > .section {
+    display: flex;
+    align-items: center;
+}
+
+.aside {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+}
+
+.sectionArt {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jpgPn {
+    width: 250px;
+}
+
+.c {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.d {
+    color: #8b8888;
+    font-size: 1.5em;
+}
+
+.e {
+    display: flex;
+    justify-content: space-between;
+}
+
+.e div {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.e div a {
+    background-color: #e7e7e7;
+    color: #8b8888;
+    border-radius: 50px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.e div p {
+    margin-right: 1rem;
+}
+.link h2 {
+    font-size: 1.4em;
+}
+
+.linkA a {
+    border: 1px solid #e7e7e7 ;
+    color: #8b8888;
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+}
+
+.linkA {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pP {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: #8b8888;
+}
+
+.pI {
+    cursor: pointer;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    color: #8b8888;
+}

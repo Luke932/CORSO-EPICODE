@@ -1,0 +1,138 @@
+/* Your st@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*Proprietà generali*/
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+    line-height: 1.65;
+    max-width: 100%;
+    background-color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Proprietà intestazione*/
+header {
+    background-color: black;
+    padding: 1rem;
+    max-width: 100%;
+    text-align: left;
+}
+
+nav {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    padding: 10rem;
+    margin-bottom: 7rem;
+}
+
+nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+nav p {
+    margin-right: 0;
+}
+
+strong {
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+nav a {
+    background-color: #f04c2f;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 auto;
+    width: 20%;
+    border-radius: 10px;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/*Contenuto principale*/
+
+#content01 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+#content01 section {
+    display: inline-block;
+    
+}
+
+#content01 img {
+    border-radius: 50%;
+    width: 500px;
+    height: auto;
+    margin-block: 1.4em;
+    margin-left: 8rem;
+    margin-right: 4rem;
+}
+
+.contenuto {
+    width: 30%;
+    margin: 0 auto;
+    
+}
+
+.contenuto h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+    ;
+    margin: 0;
+}
+
+#testim {
+    background-color: #e22d0e;
+    color: white;
+    font-size: 1.5em;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5rem;
+}
+
+#testim h2 {
+    color: white;
+
+}
+
+blockquote {
+    padding: 0 16rem 0 16rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+/*Contenuto Secondario*/
+#card .cards {
+    margin: 10.5rem;
+    border: 1px solid #dee1e3;
+    border-radius: 5px;
+}
+
+#card .cards img {
+    max-width: 100%;
+}
+/*les here */
