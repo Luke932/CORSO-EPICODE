@@ -57,12 +57,17 @@ nav ul {
 nav li {
     padding: 0.8rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-nav li:last-child {
+nav li button {
     background-color: black;
     color: white;
     border-radius: 100px;
+    font-size: 1.2em;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 .curios {
@@ -71,7 +76,7 @@ nav li:last-child {
     background-color: #ffc017;
     border-bottom: 1px solid black;
     font-family: 'Spectral', serif;
-    padding: 3rem 0 3rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
 .stay {
@@ -124,9 +129,6 @@ nav li:last-child {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.containerSecArt {
-    position: sticky;
-}
 
 #sections {
     display: flex;
@@ -250,7 +252,7 @@ nav li:last-child {
 }
 
 .c {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bolder;
 }
 
@@ -282,6 +284,7 @@ nav li:last-child {
     margin-right: 1rem;
 }
 
+
 .link h2 {
     font-size: 1.4em;
 }
@@ -292,13 +295,14 @@ nav li:last-child {
     padding: 0rem 1rem 0rem 1rem;
     margin: 0.5rem;
     cursor: pointer;
-    display: flex;
     text-decoration: none;
+    text-align: center;
 }
+
 
 .linkA {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pP {
