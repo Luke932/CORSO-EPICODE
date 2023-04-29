@@ -37,18 +37,11 @@ header {
 .headCont {
     display: flex;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
     width: 75%;
 }
 
-.containerHeader {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background-color: #ffc017;
-}
+
 
 nav ul {
     display: flex;
@@ -70,6 +63,45 @@ nav li button {
     cursor: pointer;
 }
 
+/*Modifica Dom */
+
+.btnG {
+    background-color: #18b113;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 1em;
+    border: 0;
+    transition: all 500ms linear;
+  }
+  .outBtn {
+      background-color: #191919;
+      color: white;
+      border-radius: 25px;
+      padding: 8px 1em;
+      border: 0;
+      transition: all 500ms linear ;
+  }
+  .headCh {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid 1px #191919;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: all 500ms linear;
+  }
+  .outHead {
+      width: 100%;
+      background-color: #ffc017;
+      border-bottom: solid 1px #191919;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      transition: all 1s ease-in-out;
+    }
+
 .curios {
     display: flex;
     justify-content: flex-end;
@@ -84,11 +116,12 @@ nav li button {
     padding-top: 6rem;
     display: flex;
     width: 87.5%;
+    align-items: center;
 }
 
 
 .stayCurios h2 {
-    font-size: 8em;
+    font-size: 6em;
     margin: 0;
 }
 
@@ -97,6 +130,7 @@ nav li button {
     margin: 0;
     line-height: 36px;
     color: rgba(41, 41, 41, 1);
+    width: 75%;
 }
 
 .stayCurios button {
@@ -224,7 +258,7 @@ nav li button {
 }
 
 .articlesus div p {
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 0;
     font-weight: bolder;
 }
@@ -248,7 +282,7 @@ nav li button {
 }
 
 .jpgPn {
-    width: 250px;
+    width: 200px;
 }
 
 .c {
@@ -278,12 +312,23 @@ nav li button {
     border-radius: 50px;
     padding: 0.5rem;
     cursor: pointer;
+    white-space: nowrap;
+    font-size: 0.5em;
 }
 
 .e div p {
     margin-right: 1rem;
 }
 
+.final {
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top: 160px;
+    align-self: flex-start;
+    width: 40%;
+    font-size: 0.8em;
+}
 
 .link h2 {
     font-size: 1.4em;
@@ -297,6 +342,7 @@ nav li button {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    white-space: nowrap;
 }
 
 
@@ -305,14 +351,19 @@ nav li button {
     align-items: center;
 }
 
-.pP {
+.pP,.pI {
+    position: relative;
+    left: 5px;
+}
+
+.pP > .pP {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     color: #8b8888;
 }
 
-.pI {
+.pP > .pI {
     cursor: pointer;
     display: flex;
     width: 50%;
