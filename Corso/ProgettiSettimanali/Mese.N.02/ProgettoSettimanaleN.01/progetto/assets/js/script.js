@@ -1,4 +1,4 @@
-const change = 490;
+const change = 520;
 const modBtn = document.getElementById("btnG");
 const headCh = document.getElementById("head");
 window.addEventListener("scroll", () => {
@@ -14,3 +14,4 @@ window.addEventListener("scroll", () => {
     headCh.classList.add("outHead");
   }
 });
+
