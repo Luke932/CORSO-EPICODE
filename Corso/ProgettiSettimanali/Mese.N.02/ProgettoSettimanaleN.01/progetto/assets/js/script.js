@@ -1,4 +1,4 @@
-const change = 520;
+const change = 450;
 const modBtn = document.getElementById("btnG");
 const headCh = document.getElementById("head");
 window.addEventListener("scroll", () => {
@@ -15,3 +15,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+let m = document.querySelectorAll("g[stroke-linecap='butt']");
+setInterval(() => {
+  let random = Math.round(Math.random() * (m.length - 3));
+  m[random].classList.toggle("opacity");
+}, 10);
