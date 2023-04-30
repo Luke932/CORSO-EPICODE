@@ -34,6 +34,16 @@ header {
     z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+ .headCont {
+    width: 100%;
+    font-size: 0.6em;
+ }
+ nav li button {
+    border-radius: 100px;
+ }
+}
+
 .headCont {
     display: flex;
     justify-content: space-between;
@@ -106,24 +116,23 @@ nav li button {
         opacity:0;
    transition: 0.2s;
 }
-
+/*====================================================================*/
 .curios {
     display: flex;
     justify-content: flex-end;
     background-color: #ffc017;
     border-bottom: 1px solid black;
     font-family: 'Spectral', serif;
-    padding: 2rem 0 2rem 0;
-    height: 500px;
 }
 
 svg {
-    height: 550px;
+    height: 100%;
+    position: relative;
+    top: 5%;
 }
 
 .stay {
     background-color: #ffc017;
-    padding-top: 6rem;
     display: flex;
     width: 87.5%;
     align-items: center;
@@ -152,6 +161,25 @@ svg {
     font-size: 1.5em;
     position: relative;
     top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .stayCurios {
+       font-size: 0.6em;
+       line-height: 1;
+    }
+    body {
+        width: 120vw;
+    }
+    .stay {
+        padding-top: 2rem;
+    }
+    svg {
+        position: relative;
+        right: 20%;
+        top: 8.5%;
+        height: 120%;
+    }
 }
 
 .lastNews {
@@ -228,6 +256,22 @@ svg {
 .articles>div>.section {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .articles {
+        width: 40%;
+        font-size: 0.8em;
+        position: relative;
+        right: 5%;
+    }
+    .articles div p {
+        width: 65%;
+    }
+    #sections {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .articlesus {
@@ -379,4 +423,20 @@ svg {
     width: 50%;
     justify-content: space-between;
     color: #8b8888;
+}
+
+@media screen and (max-width: 768px) {
+    .aside {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .final {
+        position: static;
+        width: 50%;
+        display: flex;
+    }
+    .articlesus {
+        font-size: 1em;
+    }
+    
 }

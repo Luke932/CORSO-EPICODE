@@ -1,4 +1,4 @@
-const change = 450;
+const change = 785;
 const modBtn = document.getElementById("btnG");
 const headCh = document.getElementById("head");
 window.addEventListener("scroll", () => {
