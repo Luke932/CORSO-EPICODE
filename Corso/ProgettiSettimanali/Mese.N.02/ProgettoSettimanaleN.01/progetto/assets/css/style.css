@@ -34,24 +34,12 @@ header {
     z-index: 1;
 }
 
-@media screen and (max-width: 768px) {
- .headCont {
-    width: 100%;
-    font-size: 0.6em;
- }
- nav li button {
-    border-radius: 100px;
- }
-}
-
 .headCont {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 75%;
 }
-
-
 
 nav ul {
     display: flex;
@@ -73,6 +61,40 @@ nav li button {
     cursor: pointer;
 }
 
+@media screen and (min-width: 481px) and (max-width: 728px) {
+
+    ul li:first-child,
+    ul li:nth-child(2),
+    ul li:nth-child(3),
+    ul li:nth-child(4) {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 554px) and (max-width: 728px) {
+    ul li:nth-child(4) {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headCont {
+        width: 100%;
+        font-size: 0.6em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+    }
+
+    nav li button {
+        border-radius: 100px;
+    }
+
+}
+
+
+
 /*Modifica Dom */
 
 .btnG {
@@ -82,16 +104,18 @@ nav li button {
     padding: 9px 1em;
     border: 0;
     transition: all 300ms ease-in-out;
-  }
-  .outBtn {
-      background-color: #191919;
-      color: white;
-      border-radius: 50px;
-      padding: 9px 1em;
-      border: 0;
-      transition: all 300ms ease-in-out ;
-  }
-  .headCh {
+}
+
+.outBtn {
+    background-color: #191919;
+    color: white;
+    border-radius: 50px;
+    padding: 9px 1em;
+    border: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.headCh {
     width: 100%;
     background-color: #ffffff;
     border-bottom: solid 1px #191919;
@@ -100,22 +124,24 @@ nav li button {
     position: fixed;
     top: 0;
     transition: all 300ms ease-in-out;
-  }
-  .outHead {
-      width: 100%;
-      background-color: #ffc017;
-      border-bottom: solid 1px #191919;
-      display: flex;
-      justify-content: center;
-      position: fixed;
-      top: 0;
-      transition: all 300ms ease-in-out;
-    }
-
-    .opacity{
-        opacity:0;
-   transition: 0.2s;
 }
+
+.outHead {
+    width: 100%;
+    background-color: #ffc017;
+    border-bottom: solid 1px #191919;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.opacity {
+    opacity: 0;
+    transition: 0.2s;
+}
+
 /*====================================================================*/
 .curios {
     display: flex;
@@ -123,6 +149,7 @@ nav li button {
     background-color: #ffc017;
     border-bottom: 1px solid black;
     font-family: 'Spectral', serif;
+    padding-top: 2rem;
 }
 
 svg {
@@ -163,17 +190,54 @@ svg {
     top: 50px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 728px) {
+    .curios {
+        padding: 5rem 0 3rem 0;
+    }
+
+    .stay {
+        width: 
+    }
+
+    .stayCurios h2 {
+        width: 500px;
+        font-size: 3.5em;
+    }
+
+    .stayCurios h3 {
+        width: 200px;
+        font-size: 1.5em;
+        line-height: 1;
+    }
+
+    .stayCurios button {
+        position: relative;
+        top: 25px;
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        font-size: 1.2em;
+    }
+
+    svg {
+        visibility: hidden;
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
     .stayCurios {
-       font-size: 0.6em;
-       line-height: 1;
+        font-size: 0.6em;
+        line-height: 1;
     }
+
     body {
         width: 120vw;
     }
+
     .stay {
         padding-top: 2rem;
     }
+
     svg {
         position: relative;
         right: 20%;
@@ -265,9 +329,11 @@ svg {
         position: relative;
         right: 5%;
     }
+
     .articles div p {
         width: 65%;
     }
+
     #sections {
         display: flex;
         justify-content: space-between;
@@ -377,7 +443,7 @@ svg {
 .final {
     display: flex;
     flex-direction: column;
-    position:sticky;
+    position: sticky;
     top: 160px;
     align-self: flex-start;
     width: 40%;
@@ -405,19 +471,20 @@ svg {
     align-items: center;
 }
 
-.pP,.pI {
+.pP,
+.pI {
     position: relative;
     left: 5px;
 }
 
-.pP > .pP {
+.pP>.pP {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     color: #8b8888;
 }
 
-.pP > .pI {
+.pP>.pI {
     cursor: pointer;
     display: flex;
     width: 50%;
@@ -430,13 +497,14 @@ svg {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .final {
         position: static;
         width: 50%;
         display: flex;
     }
+
     .articlesus {
         font-size: 1em;
     }
-    
 }
