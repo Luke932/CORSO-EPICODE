@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.dropdown-item:hover, .dropdown-it:hover, .nav-link:hover {
+  color: purple;
+}
+
+.dropdown-menu {
+  width: 10px;
+  font-size: 0.8em;
+}
+
+.back {
+  background-color: rgb(126, 74, 223);
+  margin-bottom: 1.5rem;
+}
+.back h1 {
+  color: white;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+.back p {
+  color: #b4afaf;
+}
+.back a {
+  text-decoration: none;
+}
+.back .webStud {
+  padding: 5rem 0 5rem 0;
+}
+.back .btnHead {
+  display: flex;
+  align-items: center;
+}
+.back .btnHead :first-child {
+  margin-right: 1rem;
+  color: white;
+  background-color: rgb(10, 179, 94);
+  padding: 0.6rem;
+}
+.back .btnHead :last-child {
+  color: black;
+  background-color: white;
+  padding: 0.6rem;
+}
+
+.articles {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+.articles .section span {
+  border-radius: 100px;
+  background-color: pink;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+.articles .container {
+  display: flex;
+}
+.articles .sect h5 {
+  font-weight: bolder;
+  white-space: nowrap;
+}
+.articles .sect p {
+  font-weight: 400;
+}
+
+.marg {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+.cards {
+  background-color: gainsboro;
+  padding-top: 5rem;
+}
+.cards .text {
+  margin-bottom: 1.5rem;
+}
+.cards .text h3 {
+  font-weight: bolder;
+}
+.cards .arrow {
+  width: 3%;
+  position: relative;
+  top: 150px;
+  background-color: #e2f3f5;
+  height: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body .card-title {
+  font-size: 0.8em;
+  font-weight: 900;
+}
+.card-body .clock {
+  font-size: 0.7em;
+  width: 90%;
+  color: rgb(196, 195, 195);
+}
+.card-body .clock > p {
+  position: relative;
+  top: 5px;
+}
+.card-body .star {
+  width: 70%;
+}
+.card-body .star p {
+  color: yellow;
+  font-size: 0.9em;
+}
+.card-body .star h6 {
+  font-size: 0.7em;
+  color: rgb(196, 195, 195);
+  position: relative;
+  top: 5px;
+}
+.card-body .money {
+  color: black;
+  font-size: 1em;
+}
+.card-body .money s {
+  color: rgb(196, 195, 195);
+  font-size: 0.8em;
+}
+.card-body .icon {
+  width: 100%;
+}
+.card-body .icon > div > p {
+  color: rgb(196, 195, 195);
+  font-size: 0.8em;
+  position: relative;
+  top: 10px;
+}
+
+.footer {
+  color: rgb(116, 112, 112);
+  font-size: 1em;
+}
+
+body .navbar {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+}
+body .span {
+  border-radius: 100px;
+  background-color: #e2f3f5;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+body .dropdown-center {
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

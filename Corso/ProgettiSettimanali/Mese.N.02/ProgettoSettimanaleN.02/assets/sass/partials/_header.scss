@@ -1,0 +1,34 @@
+.back {
+  background-color: rgb(126, 74, 223);
+  margin-bottom: 1.5rem;
+  h1 {
+    color: white;
+    font-weight: bolder;
+    white-space: nowrap;
+  }
+  p {
+    color: #b4afaf;
+  }
+  a {
+    text-decoration: none;
+  }
+ 
+  .webStud {
+    padding: 5rem 0 5rem 0;
+  }
+  .btnHead {
+    display: flex;
+    align-items: center;
+  }
+  .btnHead :first-child {
+    margin-right: 1rem;
+    color: white;
+    background-color: rgb(10, 179, 94);
+    padding: 0.6rem;
+  }
+  .btnHead :last-child {
+    color: black;
+    background-color: white;
+    padding: 0.6rem;
+  }
+}

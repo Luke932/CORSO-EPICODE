@@ -1,0 +1,36 @@
+@mixin nav {
+    .navbar {
+        font-family: $font;
+        font-size: $size;
+        font-weight: $weight;
+        display: flex;
+        justify-content: flex-end;
+        background-color: white;
+};
+.span {
+    border-radius: 100px;
+    background-color:#e2f3f5;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+.dropdown-center {
+    margin-right: 1rem;
+}
+};
+
+.dropdown-item:hover, .dropdown-it:hover, .nav-link:hover {
+        color: purple;
+}
+
+.dropdown-menu {
+    width: 10px;
+    font-size: $size;
+}
+
+
+
+
+
+

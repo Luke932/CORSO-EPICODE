@@ -1,0 +1,13 @@
+@import "../sass/partials/variables";
+@import "../sass/partials/navbar";
+@import "../sass/partials/header";
+@import "../sass/partials/main";
+@import "../sass/partials/footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    @include nav;
+}
+
+
