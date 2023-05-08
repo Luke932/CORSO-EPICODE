@@ -1,0 +1,21 @@
+@import "../bootstrap/scss/functions";
+
+$purple: #754ffe;
+$green: #19cb98;
+$peach: #ffeeda;
+
+// $dropdown-border-radius: 0;
+$dropdown-border-width: 0;
+
+$custom-colors: (
+  "purple": $purple,
+  "peach": $peach,
+  "green": $green,
+  "white": white
+);
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "../bootstrap/scss/maps";
+
+@import "../bootstrap/scss/bootstrap";
