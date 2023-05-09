@@ -13,7 +13,8 @@ const adminList = function () {
   let list = document.querySelector('section')
 
 
-  list.innerHTML = ''
+  list.innerHTML = '';
+  
 for (let i = 0; i < teamsList.length; i++){
     const newE = document.createElement('li')
     newE.innerText =
