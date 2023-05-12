@@ -1,0 +1,44 @@
+<!--
+    Per fare il debug di questo codice, puoi utilizzare la console del browser e il debugger integrato. Segui questi passaggi:
+
+Apri il tuo browser e vai alla console di sviluppo premendo F12 o Ctrl + Shift + I (su Windows/Linux) o Cmd + Opt + I (su Mac).
+Copia e incolla il codice di esempio nella console e premi Invio per eseguirlo.
+Osserva i messaggi nella console, che ti daranno informazioni sulle eccezioni e i loro messaggi di errore, oltre a segnalare eventuali errori nel codice.
+Per utilizzare il debugger, aggiungi la parola chiave debugger; nel punto del codice in cui desideri iniziare il debug, ad esempio, 
+prima dell'istruzione throw new Error(...); nella funzione dividi.
+Esegui nuovamente il codice nella console. Il browser si fermerà al punto in cui hai inserito il debugger; e potrai esaminare lo stato del programma, 
+le variabili e il flusso di esecuzione.
+-->
+<html>
+    <script>
+        function dividi(a, b) {
+            if (b === 0) {
+              // Lancia un'eccezione personalizzata quando il divisore è zero
+              throw new Error("Non è possibile dividere per zero.");
+            }
+            return a / b;
+          }
+          
+          function eseguiDivisione() {
+            // Esempio di valori da dividere
+            const numeratore = 10;
+            const denominatore = 0;
+          
+            try {
+              // Prova a eseguire la divisione e mostra il risultato
+              const risultato = dividi(numeratore, denominatore);
+              console.log("Risultato:", risultato);
+            } catch (errore) {
+              // Gestisce l'errore catturato
+              console.error("Si è verificato un errore:", errore.message);
+            } finally {
+              // Questo blocco viene sempre eseguito, indipendentemente dal fatto che si verifichi un'eccezione o meno
+              console.log("Esecuzione completata.");
+            }
+          }
+          
+          eseguiDivisione();
+          
+        </script>
+        
+</html>

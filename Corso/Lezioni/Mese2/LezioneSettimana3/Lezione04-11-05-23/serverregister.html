@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrazione</title>
+    <script>
+        async function inviaRegistrazione(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const cognome = document.getElementById("cognome").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const formData = new FormData();
+            formData.append("nome", nome);
+            formData.append("cognome", cognome);
+            formData.append("email", email);
+            formData.append("password", password);
+
+            const response = await fetch("http://XXXXXXXXXXXX.com/registrazione", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.text();
+            document.getElementById("result").innerHTML = "Risultato: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Registrazione</h1>
+    <form id="registrazione-form" onsubmit="inviaRegistrazione(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Registrati">
+    </form>
+    <div id="result"></div>
+</body>
+</html>
