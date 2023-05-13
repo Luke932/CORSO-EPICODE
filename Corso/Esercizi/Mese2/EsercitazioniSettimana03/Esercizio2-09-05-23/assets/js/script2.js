@@ -38,7 +38,7 @@ save.addEventListener('click', (event) => {
 });
 
 remove.addEventListener('click', (event) => {
-    localStorage.removeItem('Values')
+    event.localStorage.removeItem('Values')
 });
 
 window.load = function () {
