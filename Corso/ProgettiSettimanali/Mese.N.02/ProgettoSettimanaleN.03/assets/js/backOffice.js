@@ -48,7 +48,7 @@ if (productID) {
     })
 
     fetch(url + productID, {
-        headers: { Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMDZkODg4Zjc0MDAwMTQyODc0OTMiLCJpYXQiOjE2ODM4ODM3MzYsImV4cCI6MTY4NTA5MzMzNn0.colNDlBjkI-AldE82lkGMXSi_VS66ImoqC0S_c1Eth0" }
+        headers: { Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMDZkODg4Zjc0MDAwMTQyODc0OTMiLCJpYXQiOjE2ODM4ODM3MzYsImV4cCI6MTY4NTA5MzMzNn0.colNDlBjkI-AldE82lkGMXSi_VS66ImoqC0S_c1Eth0", }
     })
     .then((res) => {
         if(res.ok){
@@ -62,7 +62,7 @@ if (productID) {
         document.getElementById('name').value = product.name;
         document.getElementById('description').value = product.description;
         document.getElementById('brand').value = product.brand;
-        document.getElementById('image').value = product.image;
+        document.getElementById('image').value = product.imageUrl;
         document.getElementById('price').value = product.price;
     })
     .catch((err) => {

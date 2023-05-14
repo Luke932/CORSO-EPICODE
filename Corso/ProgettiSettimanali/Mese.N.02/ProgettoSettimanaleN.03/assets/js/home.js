@@ -50,3 +50,11 @@ const product = function () {
     
 
 const myTimer = setTimeout(function() {product()}, 3000);
+const barra = document.getElementById('br');
+const barra1 = document.getElementById('br1');
+const barra2 = document.getElementById('br2');
+const timeBr = setTimeout(function() {
+    barra.classList.add ('d-none');
+    barra1.classList.add ('d-none');
+    barra2.classList.add ('d-none');
+},6500);

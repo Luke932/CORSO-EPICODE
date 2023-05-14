@@ -262,13 +262,13 @@ function startTimer() {
 function nextPage() {
   localStorage.setItem('count', count);
   sessionStorage.setItem('risultato', result); //variabile che viene passata alla pagina risultati.js
-  window.location = './risultati.html';
+  window.location = './result.html';
 
   let buttonNext = document.getElementById('btn1'); //collegato button finale alla pagina risultati
   buttonNext.addEventListener('click', () => {
     localStorage.setItem('risultato', result);
     localStorage.setItem('count', count);
-    window.location.href = '../risultati.html';
+    window.location.href = '../result.html';
   });
 };
 
