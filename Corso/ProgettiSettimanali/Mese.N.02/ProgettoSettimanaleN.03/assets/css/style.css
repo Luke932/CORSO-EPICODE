@@ -25,36 +25,70 @@ img {
   aspect-ratio: 1/1;
 }
 
-.barra {
-  height: 20px;
-  width: 400px;
-  background: #009900;
-  animation-name: animazione;
-  animation-duration: 2s;
-  float: left;
-}
 
-@keyframes animazione {
-  0% {
-    background: #FF0000;
-    width: 0px;
-  }
-  50% {
-    background: #FF9900;
-  }
-  100% {
-    background: #009900;
-    width: 400px;
-  }
-}
 
 h5 {
   white-space: nowrap;
 }
 
+
+@media screen and (max-width:1000px) {
+  #br, #br2 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  
+  .barra {
+    height: 20px;
+    width: 400px;
+    background: #009900;
+    animation-name: animazione;
+    animation-duration: 2s;
+    float: left;
+  }
+  
+  @keyframes animazione {
+    0% {
+      background: #FF0000;
+      width: 0px;
+    }
+    50% {
+      background: #FF9900;
+    }
+    100% {
+      background: #009900;
+      width: 400px;
+    }
+  }
+}
+
+
 @media screen and (min-width:600px) {
   
-
+  .barra {
+    height: 20px;
+    width: 400px;
+    background: #009900;
+    animation-name: animazione;
+    animation-duration: 2s;
+    float: left;
+  }
+  
+  @keyframes animazione {
+    0% {
+      background: #FF0000;
+      width: 0px;
+    }
+    50% {
+      background: #FF9900;
+    }
+    100% {
+      background: #009900;
+      width: 400px;
+    }
+  }
 
 .n10 {
   transform: rotate(-5deg) translate(30px, 50px);

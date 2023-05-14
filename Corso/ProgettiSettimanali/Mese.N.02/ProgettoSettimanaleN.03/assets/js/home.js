@@ -27,7 +27,7 @@ const product = function () {
               <p class="fst-italic">${(product.brand)} - ${product.price}€</p>
               <div class='d-flex justify-content-between align-items-center'>
               <a href="./backoffice.html?productId=${product._id}"
-                            class="btn btn-info text-light me-2">MODIFICA</a>
+                            class="btn btn-info text-light me-2 ">MODIFICA</a>
               <a href="./details.html?productId=${product._id}"
               class="btn btn-secondary text-light" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Scopri di più</a>
               </div> 
@@ -53,8 +53,10 @@ const myTimer = setTimeout(function() {product()}, 3000);
 const barra = document.getElementById('br');
 const barra1 = document.getElementById('br1');
 const barra2 = document.getElementById('br2');
+const spin = document.getElementById('spin')
 const timeBr = setTimeout(function() {
     barra.classList.add ('d-none');
     barra1.classList.add ('d-none');
     barra2.classList.add ('d-none');
+    spin.classList.add ('d-none');
 },6500);
