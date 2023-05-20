@@ -20,7 +20,7 @@ const product = function () {
             data.forEach(product => {
                 let populate = `   
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
-            <div class="card n10 style shadow-lg p-3 mb-5 bg-success rounded-5">
+            <div class="card n10 style shadow-lg p-3 mb-5 bg-success rounded-5" style='padding:0 !important;'>
             <img src="${product.imageUrl}" class="card-img-top rounded-top-5" alt="image">
             <div class="card-body">
               <h5 class="card-title fst-italic text-warning">${product.name}</h5>

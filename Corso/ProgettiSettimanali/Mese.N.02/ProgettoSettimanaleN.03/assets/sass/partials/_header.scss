@@ -1,5 +1,8 @@
 body {
     background-color: bisque;
+    .style {
+        padding: 0 !important;
+    }
     .style:hover {
         border: 2px solid red;
         cursor: pointer;
