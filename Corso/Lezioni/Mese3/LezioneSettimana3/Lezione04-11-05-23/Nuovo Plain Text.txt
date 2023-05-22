@@ -1,0 +1,10 @@
+ let reset = document.getElementById('reset');
+    reset.classList.remove('d-none');
+    reset.addEventListener('click', () => {
+        
+        document.getElementById('name').value = '';
+        document.getElementById('description').value = '';
+        document.getElementById('brand').value = '';
+        document.getElementById('image').value = ''
+        document.getElementById('price').value = ''
+    })

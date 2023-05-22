@@ -1,0 +1,39 @@
+<script>
+    const jsonString = '{ "nome": "Mario", "eta": 30, }'; // JSON non valido a causa della virgola finale
+
+    try {
+        const oggetto = JSON.parse(jsonString);
+        console.log("Oggetto:", oggetto);
+    } catch (errore) {
+        alert("attenzione, il file che hai caricato è meglio se lo getti nel cestino");
+        console.error("Errore nel parsing JSON:", errore.message);
+    }
+
+    const oggetto = { nome: "Mario", eta: 30 };
+    console.log("Professione:", oggetto.professione.toUpperCase());
+
+    try {
+    console.log("Professione:", oggetto.professione.toUpperCase());
+    } catch (errore) {
+    console.error("Errore nell'accesso alla proprietà 'professione':", errore.message);
+    }
+
+    
+    try {
+        funzioneNonDefinita();
+    } catch (errore) {
+        console.error("Errore nella chiamata della funzione:", errore.message);
+    }
+
+    const numero = 42;
+
+    try {
+    const risultato = numero.toFixed(-2);
+    console.log("Risultato:", risultato);
+    } catch (errore) {
+    console.error("Errore nella conversione del numero:", errore.message);
+    }
+
+
+
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore</title>
+</head>
+<body>
+    <h1>Calcolatore</h1>
+    <form>
+        <fieldset>
+            <label for="numero1">Primo Numero</label>
+            <input type="number" id="numero1" name="numero1">
+            <label for="numero2">Secondo Numero</label>
+            <input type="number" id="numero2" name="numero2">
+            <p>&bnsp</p>
+            <select id="operazione">
+                <option value="" selected></option>
+                <option value="add" >Addizione</option>
+                <option value="sottr" >Sottrazione</option>
+                <option value="molt" >Moltiplicazione</option>
+                <option value="div" >Divisione</option>
+            </select>
+            <button type="button" id="calcola">CALCOLA</button>
+            <button type="reset" id="reset">RESET</button>
+        </fieldset>
+    </form>
+
+    <h3 id="risultato"></h3>
+
+ <script src="assets/js/script.js"></script>   
+</body>
+</html>
