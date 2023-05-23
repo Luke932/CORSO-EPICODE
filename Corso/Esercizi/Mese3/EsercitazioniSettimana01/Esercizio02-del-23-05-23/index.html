@@ -9,56 +9,48 @@
 <body>
     <div id="container">
         <div id="titolo">
-            <h1>Conti Bancari</h1>
+            <h1>Conti Bancario</h1>
         </div>
     </div>
     <div id="gioco">
-        <h3>Prelievo e versamenti di 2 conti differenti</h3>
+        <h3>Prelievi e versamenti di 1 conto</h3>
     </div>
 
     <hr>
 
-    <div id="form">
+    <form id="topolino">
         <fieldset>
-            <h2 id="conto1"></h2>
             <label for="conto1">Conto iniziale</label>
             <input type="number" name="primoConto" id="primoConto">
+            <p id="conto1"></p>
+            <button id="balanceInitial" type="submit">Conto iniziale</button>
 
             <label for="conto1">Conto dopo primo versamento</label>
             <input type="number" name="primoVersamento" id="primoVersamento">
-            <button id="vers">Versa</button>
+            <button id="vers" type="submit">Versa</button>
             <p id="result"></p>
 
             <label for="conto1">Conto dopo primo prelievo</label>
             <input type="number" name="primoPrelievo" id="primoPrelievo">
-            <button id="prel">Prelieva</button>
+            <button id="prel" type="submit">Prelieva</button>
             <p id="result2"></p>
 
             <label for="conto1">Conto dopo secondo versamento </label>
             <input type="number" name="secondoVersamento" id="secondoVersamento">
-            <button id="vers2">Versa</button>
+            <button id="vers2" type="submit">Versa</button>
             <p id="result3"></p>
 
             <label for="conto1">Conto dopo secondo prelievo</label>
-            <input type="number" name="secondoPrelievo" id="primoPrelievo">
-            <button id="prel2">Prelieva</button>
+            <input type="number" name="secondoPrelievo" id="secondoPrelievo">
+            <button id="prel2" type="submit">Prelieva</button>
             <p id="result4"></p>
 
 
-            <h2 id="conto2"></h2>
-            <label for="conto2">Conto iniziale</label>
-            <input type="number" name="primoConto" id="primoConto2">
-            <label for="conto2">Conto dopo primo versamento</label>
-            <input type="number" name="primoVersamento" id="primoVersamento2">
-            <label for="conto2">Conto dopo primo prelievo</label>
-            <input type="number" name="primoPrelievo" id="primoPrelievo2">
-            <label for="conto2">Conto dopo secondo versamento </label>
-            <input type="number" name="secondoVersamento" id="secondoVersamento2">
-            <label for="conto2">Conto dopo secondo prelievo</label>
-            <input type="number" name="secondoPrelievo" id="primoPrelievo2">
+            
 
             
         </fieldset>
+    </form>
         
 
 
