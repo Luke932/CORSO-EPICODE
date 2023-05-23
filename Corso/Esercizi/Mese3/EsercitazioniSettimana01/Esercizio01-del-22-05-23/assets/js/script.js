@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
     btnReset.style.backgroundColor = "red";
     btnReset.style.color = "white";
 });
-btnVerifica.addEventListener("click", function () {
+btnVerifica === null || btnVerifica === void 0 ? void 0 : btnVerifica.addEventListener("click", function () {
     valore1 = Number(giocatore1.value);
     valore2 = Number(giocatore2.value);
     verifica();

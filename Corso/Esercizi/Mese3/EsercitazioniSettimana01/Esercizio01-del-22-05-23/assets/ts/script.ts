@@ -1,11 +1,11 @@
 const btnVerifica = document.getElementById("verifica") as HTMLButtonElement;
 const btnReset = document.getElementById("reset") as HTMLButtonElement;
-const giocatore1 = document.getElementById("giocatore1") as HTMLInputElement;
-const giocatore2 = document.getElementById("giocatore2") as HTMLInputElement;
+const giocatore3 = document.getElementById("giocatore1") as HTMLInputElement;
+const giocatore4 = document.getElementById("giocatore2") as HTMLInputElement;
 let valore1: number;
 let valore2: number;
-const messaggio = document.getElementById("risultato");
-let estratto: number;
+const messaggio = document.getElementById("risultato") as HTMLElement | null;
+let estratto1: number;
 
 window.addEventListener("load", function () {
   btnReset.setAttribute("disabled", "true");
@@ -14,12 +14,12 @@ window.addEventListener("load", function () {
 });
 
 btnVerifica.addEventListener("click", function () {
-  valore1 = Number(giocatore1.value);
-  valore2 = Number(giocatore2.value);
-  verifica();
+  valore1 = Number(giocatore3.value);
+  valore2 = Number(giocatore4.value);
+  verifica1();
 });
 
-const verifica = () => {
+const verifica1 = () => {
   if (!valore1 || !valore2) {
     if (messaggio !== null) {
       messaggio.innerHTML =
@@ -50,10 +50,10 @@ const estrai = () => {
 const calcola = () => {
   btnReset.removeAttribute("disabled");
   btnReset.style.backgroundColor = "green";
-  giocatore1.setAttribute("disabled", "true");
-  giocatore1.style.backgroundColor = "lightgray";
-  giocatore2.setAttribute("disabled", "true");
-  giocatore2.style.backgroundColor = "lightgray";
+  giocatore3.setAttribute("disabled", "true");
+  giocatore3.style.backgroundColor = "lightgray";
+  giocatore4.setAttribute("disabled", "true");
+  giocatore4.style.backgroundColor = "lightgray";
 
   if (messaggio !== null) {
     document.getElementById(
@@ -103,12 +103,12 @@ const calcola = () => {
 btnReset.addEventListener("click", function () {
   btnVerifica.removeAttribute("disabled");
   btnVerifica.removeAttribute("style");
-  giocatore1.removeAttribute("disabled");
-  giocatore1.removeAttribute("style");
-  giocatore2.removeAttribute("disabled");
-  giocatore2.removeAttribute("style");
-  giocatore1.value = "";
-  giocatore2.value = "";
+  giocatore3.removeAttribute("disabled");
+  giocatore3.removeAttribute("style");
+  giocatore4.removeAttribute("disabled");
+  giocatore4.removeAttribute("style");
+  giocatore3.value = "";
+  giocatore4.value = "";
   if (messaggio !== null) {
     messaggio.innerHTML = "";
   }
@@ -140,9 +140,6 @@ const numberRandom: number = Math.floor(Math.random() * 100 + 1);
   }else if (Math.abs(numberRandom - player2) < Math.abs(numberRandom - player1)) {
     console.log('Nessuno ha vinto ma il player 2 si è avvicinato di più');
   }else console.log('Pareggio');
-
-
-  //============================================================================================
 
 const random = (): number => {
   return Math.floor(Math.random() * 100 + 1);
@@ -189,4 +186,4 @@ const play = (): void => {
   }
 };
 
-play();
+play()
