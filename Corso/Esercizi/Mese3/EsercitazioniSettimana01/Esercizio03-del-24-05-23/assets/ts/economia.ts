@@ -22,7 +22,7 @@ class Calculator {
 
   getRedditoAnnuoNetto(): any {
     return (
-      this.redditoAnnuoLordo - (this.getTasseInps() - this.getTasseIrpef())
+      this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef())
     );
   }
 }
@@ -86,7 +86,7 @@ class BiCalculator implements Pippo {
     
       getRedditoAnnuoNetto(): any {
         return (
-          this.redditoAnnuoLordo - (this.getTasseInps() - this.getTasseIrpef())
+          this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef())
         );
       }
 }
@@ -160,7 +160,7 @@ abstract class CiCalculator {
         
           getRedditoAnnuoNetto(): any {
             return (
-              this.redditoAnnuoLordo - (this.getTasseInps() - this.getTasseIrpef())
+              this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef())
             );
           }
         

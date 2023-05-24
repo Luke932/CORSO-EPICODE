@@ -16,7 +16,7 @@ class Calculator {
         return (this.getUtileTasse() * this.tasseIrpef) / 100;
     }
     getRedditoAnnuoNetto() {
-        return (this.redditoAnnuoLordo - (this.getTasseInps() - this.getTasseIrpef()));
+        return (this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef()));
     }
 }
 let commerciante = new Calculator(40, 58000);
@@ -54,7 +54,7 @@ class BiCalculator {
         return (this.getUtileTasse() * this.tasseIrpef) / 100;
     }
     getRedditoAnnuoNetto() {
-        return (this.redditoAnnuoLordo - (this.getTasseInps() - this.getTasseIrpef()));
+        return (this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef()));
     }
 }
 let commerciante1 = new BiCalculator(40, 58000);
@@ -98,7 +98,7 @@ class Paperino extends CiCalculator {
         return (this.getUtileTasse() * this.tasseIrpef) / 100;
     }
     getRedditoAnnuoNetto() {
-        return (this.redditoAnnuoLordo - (this.getTasseInps() - this.getTasseIrpef()));
+        return (this.redditoAnnuoLordo - (this.getTasseInps() + this.getTasseIrpef()));
     }
 }
 ;
