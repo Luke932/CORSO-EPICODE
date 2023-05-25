@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+body {
+  background-color: bisque;
+}
+body .style:hover {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+input:hover {
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+#save-button:hover, #delete-btn:hover, #reset:hover {
+  border: 2px solid red;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+
+
+h5 {
+  white-space: nowrap;
+}
+
+
+@media screen and (max-width:1000px) {
+  #br, #br2 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  
+  .barra {
+    height: 20px;
+    width: 400px;
+    background: #009900;
+    animation-name: animazione;
+    animation-duration: 2s;
+    float: left;
+  }
+  
+  @keyframes animazione {
+    0% {
+      background: #FF0000;
+      width: 0px;
+    }
+    50% {
+      background: #FF9900;
+    }
+    100% {
+      background: #009900;
+      width: 400px;
+    }
+  }
+}
+
+
+@media screen and (min-width:600px) {
+  
+  .barra {
+    height: 20px;
+    width: 400px;
+    background: #009900;
+    animation-name: animazione;
+    animation-duration: 2s;
+    float: left;
+  }
+  
+  @keyframes animazione {
+    0% {
+      background: #FF0000;
+      width: 0px;
+    }
+    50% {
+      background: #FF9900;
+    }
+    100% {
+      background: #009900;
+      width: 400px;
+    }
+  }
+
+.n10 {
+  transform: translate(30px, 50px);
+  transition-duration: 1s;
+  animation-delay: 0.5s;
+  animation: numb1 3s backwards;
+}
+
+@keyframes numb1 {
+  0% {
+    transform: translateY(-600px) rotate(-360deg) scale(1.6);
+  }
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+}
+.card:hover {
+  z-index: 2;
+  transform: scale(1.3);
+}/*# sourceMappingURL=style.css.map */
+
+}
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-info mb-5">
+        <nav class="navbar navbar-expand-lg  bg-info">
+            <div class="container bg-info">
+              <h3 class="text-warning">Odiazon</h3>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                  </li>
+                </ul>
+                <div class="d-flex" role="search">
+                    <div class="nav-item">
+                        <a class="nav-link" href="/backoffice.html">Back Office</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container">
+        <div class="col-12 d-flex">
+            <h2 class="display-1 text-info text-center fw-bold">Store Products</h2>
+            <div id="spin" class="spinner-border text-primary me-5" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>            
+            <div id="br" class="text-info" style="float:left;">0%</div><div class="barra" id="br1">&nbsp;</div><div id="br2" class="text-info">100%</div>
+          </div class="col-12">
+          <div class="col-12 mt-5">
+            <div class="row d-flex justify-content-between" id="container">
+
+            </div>
+          </div>
+        </div>  
+    </div>
+
+
+    <script src="assets/js/prodotti.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
