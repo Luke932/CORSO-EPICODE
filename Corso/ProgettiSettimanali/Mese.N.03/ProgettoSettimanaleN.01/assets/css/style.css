@@ -1,0 +1,113 @@
+body {
+    background-color: bisque;
+  }
+  body .style:hover {
+    border: 2px solid red;
+    cursor: pointer;
+  }
+  
+  input:hover {
+    border: 2px solid green;
+    cursor: pointer;
+  }
+  
+  #save-button:hover, #delete-btn:hover, #reset:hover {
+    border: 2px solid red;
+  }
+  
+  .nav-link:hover {
+    color: red;
+  }
+  
+  img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  
+  
+  
+  h5 {
+    white-space: nowrap;
+  }
+  
+  
+  @media screen and (max-width:1000px) {
+    #br, #br2 {
+      visibility: hidden;
+    }
+  }
+  
+  @media screen and (min-width:1000px) {
+    
+    .barra {
+      height: 20px;
+      width: 400px;
+      background: #009900;
+      animation-name: animazione;
+      animation-duration: 2s;
+      float: left;
+    }
+    
+    @keyframes animazione {
+      0% {
+        background: #FF0000;
+        width: 0px;
+      }
+      50% {
+        background: #FF9900;
+      }
+      100% {
+        background: #009900;
+        width: 400px;
+      }
+    }
+  }
+  
+  
+  @media screen and (min-width:600px) {
+    
+    .barra {
+      height: 20px;
+      width: 400px;
+      background: #009900;
+      animation-name: animazione;
+      animation-duration: 2s;
+      float: left;
+    }
+    
+    @keyframes animazione {
+      0% {
+        background: #FF0000;
+        width: 0px;
+      }
+      50% {
+        background: #FF9900;
+      }
+      100% {
+        background: #009900;
+        width: 400px;
+      }
+    }
+  
+  .n10 {
+    transform: translate(30px, 50px);
+    transition-duration: 1s;
+    animation-delay: 0.5s;
+    animation: numb1 3s backwards;
+  }
+  
+  @keyframes numb1 {
+    0% {
+      transform: translateY(-600px) rotate(-360deg) scale(1.6);
+    }
+    100% {
+      transform: translateY(0) rotate(-5deg);
+    }
+  }
+  .card:hover {
+    z-index: 2;
+    transform: scale(1.3);
+  }/*# sourceMappingURL=style.css.map */
+  
+  }
