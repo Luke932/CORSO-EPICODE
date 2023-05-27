@@ -60,7 +60,8 @@ sommary!.addEventListener("submit", (e) => {
   user.chiamata(Number(minutes!.value));
   saldoAttuale!.innerHTML = `Il tuo credito residuo è di: ${user.numero404()}`;
   numPhone!.innerHTML = `Numero di chiamate effettuate: ${user.getNumeroChiamate()}`;
-
+    money!.value = '';
+    minutes!.value = '';
 });
 
   
