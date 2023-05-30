@@ -1,0 +1,23 @@
+<div class="container mb-5" >
+  <div class="row d-flex justify-content-between">
+    <div *ngFor="let item of data" class="col-lg-4">
+      <div *ngIf="item.active === false" >
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">
+            {{ item.id }}
+          </h4>
+        </div>
+        <div class="card-header">
+          <h4 class="card-title">
+            {{ item.title }}
+          </h4>
+          <div class="card-subtitle">
+            {{ item.body}}
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+</div>
