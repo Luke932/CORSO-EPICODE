@@ -1,0 +1,25 @@
+
+  <div [ngClass]="{
+    'bg-warning': itemData.type == 'news',
+    'bg-info': itemData.type == 'education',
+    'bg-dark': itemData.type == 'politic',
+    'text-white': itemData.type == 'politic'
+  }" class="card">
+    <div class="card-header">
+      <h4 class="card-title">
+        {{ itemData.id }}
+      </h4>
+    </div>
+    <div class="card-header">
+      <h4 class="card-title">
+        {{ itemData.title }}
+      </h4>
+      <div class="card-subtitle">
+        {{ itemData.body}}
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+
+
+

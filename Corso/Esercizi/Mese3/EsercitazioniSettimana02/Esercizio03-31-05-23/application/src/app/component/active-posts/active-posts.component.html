@@ -1,0 +1,8 @@
+<div class="container mb-5">
+  <div class="row">
+    <div *ngFor="let item of posts, let i = index" class="col-lg-4">
+      <app-custom *ngIf="item.active" [itemData]="item" >
+        <button (click)="onInactivePosts(item.id, i)" class="btn btn-primary">Disattiva</button>
+      </app-custom>
+    </div>
+  </div>
