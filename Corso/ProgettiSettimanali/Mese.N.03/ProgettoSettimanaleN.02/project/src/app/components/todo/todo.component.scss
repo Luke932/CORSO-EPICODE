@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+h2{
+  color: green;
+}
+
+.dates {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 0;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 30vh;
+  max-width: 20%;
+  margin: 0 auto;
+}

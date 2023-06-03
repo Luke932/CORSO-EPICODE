@@ -1,0 +1,11 @@
+<h1>Completati</h1>
+
+<div class="alert alert-primary mb-1" *ngIf="searchTask">Ricerca delle task completate
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+  <p *ngFor="let todo of completedTodos">
+    -{{ todo.title }}🎪
+  </p>
+

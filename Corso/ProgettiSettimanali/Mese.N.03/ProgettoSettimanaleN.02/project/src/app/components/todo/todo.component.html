@@ -1,0 +1,34 @@
+<h1>Todo</h1>
+
+
+  <h2 *ngFor="let todo of todos" class="text-center text-succcess">
+    {{ todo.title }}
+    <button (click)="removeAndAddToCompleted(todo)" class="dates">
+      ✌
+    </button>
+  </h2>
+
+  <div class="alert alert-primary mb-1" *ngIf="searchTask">Ricerca delle task
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div class="alert alert-danger mb-1" *ngIf="messageNoComplete">Nessuna task trovata... aggiungine una!
+    <div class="spinner-grow text-dark" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div class="alert alert-info mb-1" *ngIf="addTask">Inserimento task in corso...
+    <div class="spinner-border spinner-border-sm" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow spinner-grow-sm" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+<div class="todos">
+  <input type="text" class="form-control" [(ngModel)]="title" placeholder="Enter task title">
+  <button class="btn btn-info" (click)="addTodo()">  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+    Add Task</button>
+  </div>

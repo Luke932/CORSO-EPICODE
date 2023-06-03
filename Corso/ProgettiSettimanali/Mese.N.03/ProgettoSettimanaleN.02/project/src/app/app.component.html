@@ -1,0 +1,8 @@
+<nav class="mb-3">
+  <ul>
+    <li><img src="../assets/imgs/to-do-list.png" style="width: 3%;" alt="to-do-list"></li>
+    <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Todo</a></li>
+    <li><a [routerLink]="['/completati']" routerLinkActive="active">Completati</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
