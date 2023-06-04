@@ -18,6 +18,11 @@
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
+  <div class="alert alert-danger mb-1" *ngIf="taskToComplete">Ops... non ci sono task da completare
+    <div class="spinner-grow text-dark" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
   <div class="alert alert-info mb-1" *ngIf="addTask">Inserimento task in corso...
     <div class="spinner-border spinner-border-sm" role="status">
       <span class="visually-hidden">Loading...</span>

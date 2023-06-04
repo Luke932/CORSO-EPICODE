@@ -14,6 +14,7 @@ export class TodoComponent implements OnInit {
   messageNoComplete: boolean = false;
   addTask: boolean = false;
   searchTask: boolean = false;
+  taskToComplete: boolean = false;
 
 
   constructor(private todoService: TodoService) { }
@@ -58,7 +59,7 @@ export class TodoComponent implements OnInit {
         removedTodo.completed = true;
         this.todoService.addToCompleted(removedTodo);
           this.fetchCompletedTodos();
-          this.messageNoComplete = this.todos.length === 0;
+          this.taskToComplete = this.todos.length === 0;
       })
       .catch(error => console.log(error));
   }
