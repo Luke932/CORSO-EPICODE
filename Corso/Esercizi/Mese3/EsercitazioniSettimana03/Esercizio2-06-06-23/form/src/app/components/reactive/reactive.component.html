@@ -1,0 +1,73 @@
+<div class="container mt-3">
+  <h1 class="text-center">Reactive Form</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="formContainer" >
+        <div formGroupName="heroesInfo">
+          <div class="form-group">
+            <label for="heroesName">Heroes Name</label>
+            <input type="text" id="heroesName" class="form-control" formControlName="heroesName" />
+            <span *ngIf="getHeroesF('heroesInfo.heroesName')?.invalid && getHeroesF('heroesInfo.heroesName')?.touched">
+              <ng-container *ngIf="getErrorsC('heroesInfo.heroesName', 'required')">Campo Heroes Name obbligatorio</ng-container>
+              <ng-container *ngIf="getErrorsC('heroesInfo.heroesName', 'heroesDet')">Heroes Name non consentito</ng-container>
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="alterEgo">Alter Ego</label>
+            <input type="text" id="alterEgo" class="form-control" formControlName="alterEgo" />
+            <span *ngIf="getHeroesF('heroesInfo.alterEgo')?.invalid && getHeroesF('heroesInfo.alterEgo')?.touched">
+              <ng-container *ngIf="getErrorsC('heroesInfo.alterEgo', 'required')">Campo Alter Ego obbligatorio</ng-container>
+            </span>
+          </div>
+          <div formArrayName="power" class="mb-3">
+            <h3>I miei poteri</h3>
+            <button type="button" class="btn btn-success" (click)="addPower()">Aggiungi Potere</button>
+            <div class="form-group mb-2" *ngFor="let powers of getPower(); let i = index">
+              <select id="power" name="power" class="form-select" [formControlName]="i">
+                <option value=""></option>
+                <option value="forza">Forza divina</option>
+                <option value="invisibilità">Potere dell'invisibilità</option>
+                <option value="elasticità">Corpo elastico</option>
+                <option value="fulmine">Controllo dei fulmini</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="enemy">Enemy</label>
+            <input type="text" id="enemy" class="form-control" maxlength="10" formControlName="enemy" />
+            <span *ngIf="getHeroesF('heroesInfo.enemy')?.invalid && getHeroesF('heroesInfo.enemy')?.touched">
+              <ng-container *ngIf="getErrorsC('heroesInfo.enemy', 'required')">Campo Enemy obbligatorio</ng-container>
+              <ng-container *ngIf="getErrorsC('heroesInfo.enemy', 'maxlength=10')">Max 10 caratteri</ng-container>
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="planet">Planet</label>
+            <input type="text" id="planet" class="form-control" minlength="5" formControlName="planet" />
+            <span *ngIf="getHeroesF('heroesInfo.planet')?.invalid && getHeroesF('heroesInfo.planet')?.touched">
+              <ng-container *ngIf="getErrorsC('heroesInfo.planet', 'required')">Campo Planet obbligatorio</ng-container>
+              <ng-container *ngIf="getErrorsC('heroesInfo.planet', 'minlength=5')">Minimo 5 caratteri</ng-container>
+            </span>
+          </div>
+          <div formArrayName="weakness" class="mb-3">
+            <h3>Le mie debolezze</h3>
+            <button type="button" class="btn btn-success" (click)="addWeakness()">Aggiungi Debolezza</button>
+            <div class="form-group mb-2" *ngFor="let weakness of getWeakness(); let i = index">
+              <select id="weakness" name="weakness" class="form-select" [formControlName]="i">
+                <option value=""></option>
+                <option value="forza">Forza divina</option>
+                <option value="invisibilità">Potere dell'invisibilità</option>
+                <option value="elasticità">Corpo elastico</option>
+                <option value="fulmine">Controllo dei fulmini</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" (click)="submitForms()" class="btn btn-primary" [disabled]="formContainer.invalid">
+            Invia
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

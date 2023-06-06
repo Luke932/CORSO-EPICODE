@@ -1,0 +1,78 @@
+<div class="container">
+  <h1 class="text-center">Template Driven Form</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <!-- Direttiva ngForm del form nel suo complesso -->
+          <form (ngSubmit)="submitForm()" #formCenter="ngForm">
+
+            <!-- Direttiva ngModelGroup per gestire i campi del form in un unico gruppo di value (userInfo) -->
+            <div ngModelGroup="heroesInfo" id="heroesInfo" #heroesGroup="ngModelGroup">
+
+              <!-- Sezione testo (user-email) -->
+              <div class="form-group">
+                <label for="heroesName">Heroes Name</label>
+                <input type="text" id="heroesName" [ngModel]="heroesForm.heroesName" name="heroesName"
+                  class="form-control" required #heroesName="ngModel">
+                <!-- Messaggio di errore -->
+                <p *ngIf="heroesName.invalid && heroesName.touched"><strong>Questo campo è obbligatorio</strong></p>
+              </div>
+
+              <div class="form-group">
+                <label for="alterEgo">Alter Ego</label>
+                <input type="text" id="alterEgo" [ngModel]="heroesForm.alterEgo" name="alterEgo" class="form-control"
+                  required #alterEgo="ngModel">
+                <!-- Messaggio di errore -->
+                <p *ngIf="alterEgo.invalid && alterEgo.touched"><strong>Questo campo è obbligatorio</strong></p>
+              </div>
+
+              <div class="form-group">
+                <label for="option">Potere</label>
+                <select id="option" name="option" class="form-select" required name="option"
+                  [ngModel]="heroesForm.option" #option="ngModel">
+                  <option value="select">Seleziona un super potere</option>
+                  <option *ngFor="let power of powers" [value]="power">{{power}}</option>
+                </select>
+                <!-- Messaggio di errore -->
+                <p *ngIf="option.invalid && option.touched"><strong>Questo campo è obbligatorio</strong></p>
+              </div>
+
+              <div class="form-group">
+                <label for="enemy">Enemy</label>
+                <input type="text" id="enemy" [ngModel]="heroesForm.enemy" name="enemy" class="form-control" required
+                  maxlength="10" #enemy="ngModel">
+                <!-- Messaggio di errore -->
+                <p class="alert alert-danger" role="alert" *ngIf="enemy.invalid && enemy.touched">
+                  Campo obbligatorio con massimo 10 caratteri!!!
+                </p>
+
+              </div>
+
+              <div class="form-group">
+                <label for="planet">Planet</label>
+                <input type="text" id="planet" [ngModel]="heroesForm.planet" name="planet" class="form-control" required minlength="5" #planet="ngModel">
+                <!-- Messaggio di errore -->
+                <p class="alert alert-danger" role="alert" *ngIf="enemy.invalid && enemy.touched">
+                  Campo obbligatorio con minimo 5 caratteri!!!
+                </p>
+
+              </div>
+
+              <div class="form-group">
+                <label for="weakness">weakness</label>
+                <input type="text" id="weakness" [ngModel]="heroesForm.weakness" name="weakness" class="form-control"
+                  #weakness="ngModel">
+              </div>
+
+
+
+              <!-- button submit -->
+              <button type="submit" class="btn btn-primary mt-3" [disabled]="formCenter.invalid">Invia</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
