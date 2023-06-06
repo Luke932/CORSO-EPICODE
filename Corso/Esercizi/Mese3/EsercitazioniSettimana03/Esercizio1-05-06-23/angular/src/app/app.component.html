@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <app-favoriti></app-favoriti>
+  <div *ngIf="http; else loading" class="row">
+    <div  *ngFor="let photo of http; let i = index" class="col-6 ccol">
+      <div class="card">
+        <img [src]="photo.thumbnailUrl" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{photo.title}}</h5>
+          <a (click)="eliminazione(photo.id,i)" class="btn btn-danger ">Elimina</a>
+          <!-- Al click il button chiama il metodo onFavorite (riga 64) -->
+          <a (click)="favoriti()" class="btn  btn-success ms-4">Mi piace</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #loading>
+<div class="spinner-border" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+</ng-template>
