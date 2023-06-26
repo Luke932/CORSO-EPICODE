@@ -1,0 +1,241 @@
+.MainContent {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #121212;
+  padding: 1em;
+  overflow-x: hidden;
+}
+
+.MainContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.MainContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.MainContent::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.MainContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.playListSongImage {
+  max-width: 80%;
+  border-radius: 3px 0 0 3px;
+}
+
+.mainSongImage {
+  margin-right: 1em;
+  padding: 1em;
+  max-width: 100%;
+}
+
+.favListSongImage {
+  box-shadow: 0 0 5px white;
+  max-width: 100%;
+
+  @media (min-width: 766px) {
+    padding: 0;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
+
+.playButton {
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  margin-right: 1em;
+  background-color: #1ed760;
+  border: none;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 0 white;
+}
+
+.saveButton {
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  margin-right: 1em;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.homeTitle {
+  font-size: 4em;
+}
+
+.songInfoDiv {
+  padding: 0;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  white-space: nowrap;
+
+  p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.playListCard {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+
+  @media (min-width: 766px) {
+    background-color: #242424;
+    
+  }
+ 
+}
+.playListCard:hover {
+  @media (min-width: 766px) {
+    box-shadow: 1px 1px 5px 1px white;
+    transform: scale(1.1);
+  }
+}
+
+.favListCard {
+  background-color: #242424;
+  border: 0;
+  border-radius: 10px;
+  padding: 1em;
+
+  @media (min-width: 766px) {
+    padding: 0.7em;
+    background-color: #0e0d0d;
+  }
+}
+.favListCard:hover {
+ 
+    box-shadow: 1px 1px 5px 1px white;
+    transform: scale(1.03);
+  
+}
+
+.mainSongCard {
+  background: linear-gradient(20deg, black, #121212);
+  border: none;
+  color: white;
+
+  
+  h1:hover,
+  button:hover {
+    color: gray;
+  }
+  h1:hover {
+    cursor: pointer;
+  }
+}
+
+.mainSongInfoDiv {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.playListRow {
+  color: white;
+  border-radius: 10px;
+  p:hover {
+    color: gray;
+    cursor: pointer;
+  }
+}
+.playListRow:hover {
+  @media (max-width: 765px) {
+    box-shadow: 1px 1px 5px 1px white;
+    transform: scale(1.05);
+    z-index: 10;
+  }
+}
+.playListRow2 {
+  color: white;
+  p:hover {
+    color: gray;
+    cursor: pointer;
+  }
+  
+}
+.favListRow {
+  color: white;
+
+  p:hover {
+    color: gray;
+  }
+
+  padding: 1em;
+}
+
+.favSongInfoDiv {
+  font-size: 1.2em;
+  font-weight: 700;
+  white-space: nowrap;
+
+  p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .favSongName {
+    font-size: 2em;
+  }
+
+  @media (min-width: 766px) {
+    font-size: 0.8em;
+    font-weight: 400;
+
+    .favSongName {
+      font-size: small;
+    }
+  }
+  
+}
+
+.playListSongDiv {
+  margin-bottom: 1em;
+}
+
+.barraUtente{
+  position: sticky;
+  top: 0;
+}
+
+.nBrani {
+  margin: 0 1em 0 0;
+}
+
+/*
+.svgGreen {
+  fill: #1ed760;
+}
+*/
+
+.mainBlurred {
+  opacity: 0.9;
+}

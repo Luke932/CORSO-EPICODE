@@ -1,0 +1,153 @@
+.NavbarContainer {
+  max-height: 100vh;
+  z-index: 1;
+  font-size: 0.8rem;
+}
+.CuoreB{
+  background: linear-gradient(146deg, rgba(53,47,154,1) 0%, rgba(47,49,57,1) 50%, rgba(113,177,190,1) 100%);
+}
+.Bookmark{
+  background-color: rgb(27, 77, 27);  
+}
+
+#Navbar {
+  cursor: pointer;
+}
+
+.NavbarContainer svg:hover{
+  color :white !important;
+  cursor: pointer;
+}
+.NavbarContainer div:hover{
+  color :white !important;
+ 
+}
+.NavbarContainer p:hover{
+  color :white !important;
+  cursor: pointer;
+}
+
+.playlistSalvate {
+  overflow-y: auto;
+  max-height: 60%;
+}
+.playlistSalvate::-webkit-scrollbar {
+  width: 10px;
+}
+
+.playlistSalvate::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.playlistSalvate::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.playlistSalvate::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.playlistSalvate p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gray;
+}
+.sidebarRxIcons {
+  color: #585858;
+}
+.sidebarRx {
+  height: 100vh;
+}
+
+.px-4 {
+  padding: 0.5rem !important;
+  font-size: 0.8em;
+}
+
+.sidebarRx .bg-black {
+  height: 100%;
+}
+@media (max-width: 766px) {
+  #Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    div {
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 !important;
+      #NavBar,
+      div,
+      svg {
+        margin: 0 !important;
+      }
+    }
+  }
+  .NavbarContainer {
+    padding: 0rem !important;
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 1) 50%) !important;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 1) 50%) !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 1) 50%) !important;
+  div{
+    opacity: 1 !important;
+  }
+  
+  }
+  #songContainer {
+    display: none !important;
+  }
+}
+.barraUtente{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  
+}
+@media (max-height: 1200px) {
+  .playlistSalvate{
+    max-height: 45%;
+  }
+}
+@media (max-height: 1060px) {
+  .playlistSalvate{
+    max-height: 40%;
+  }
+}
+@media (max-height: 950px){
+  .playlistSalvate{
+    max-height: 35%;
+  }
+  
+}
+@media (max-height: 850px){
+  .playlistSalvate{
+    max-height: 24%;
+  }
+  
+}
+@media (max-height: 750px){
+  .playlistSalvate{
+    max-height: 20%;
+  }
+  
+}
+@media (max-height: 650px){
+  .playlistSalvate{
+    max-height: 10%;
+  }
+  
+}
+@media (max-height: 550px){
+  .playlistSalvate{
+    display: none !important;
+  }
+  
+}

@@ -1,0 +1,173 @@
+
+.cardinia {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  .img-fluid {
+    box-shadow:  10px  10px 5px #dedede,
+              -10px -10px 5px #dedede,
+               10px -10px 5px #dedede,
+              -10px  10px 5px #dedede;
+    position: relative;
+    top: 30px;
+  }
+  .album {
+    position: relative;
+    left: 50px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+
+  .d-flex > p {
+    font-size: 0.8em;
+    position: relative;
+    top: 5px;
+  }
+ 
+  .pincopallino {
+    color: rgba(255, 255, 255, 0.61);
+  }
+}
+
+.ms-1 {
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: green;
+}
+
+.greys {
+    color: rgba(255, 255, 255, 0.61);
+  }
+
+.linear {
+  line-height: 3;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.barraUtente{
+ position: fixed;
+ width: 60%;
+}
+
+@media screen and (min-width: 414px) and (max-width:765px) {
+  #image {
+    position: relative;
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width:765px) {
+  #image {
+    position: relative;
+    left: 120px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width:765px) {
+  .pincopallo {
+    position: relative;
+    right: 50px;
+  }
+}
+
+.grey {
+  color: rgba(255, 255, 255, 0.61);
+  
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 766px) {
+  .grey {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+  }
+}
+
+.dropdown {
+  position: relative;
+  top: 8px;
+}
+
+.camva {
+  position: relative;
+  left: 100px;
+}
+
+@media screen and (max-width:765px) {
+  .pincopallino {
+    display: none !important;
+  }
+  .iter {
+    width: 30%;
+  }
+  #profile {
+    width: 30px !important ;
+    height: 30px !important;
+    white-space: nowrap;
+    
+  }
+  .giovane {
+    white-space: nowrap;
+  }
+}
+
+.compars {
+  color: rgba(255, 255, 255, 0.61)
+}
+
+.bongo {
+  position: relative;
+  top: 10px;
+}
+
+#bingo {
+  position: relative;
+  bottom: 8px;
+  width: 80%;
+}
+
+.backgr {
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: green;
+}
+
+@media screen and (min-width: 766px) {
+  .powerangers,.compars {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .greys {
+    margin-bottom: 1rem;
+  } 
+}
+
+.cursor, .shuf {
+  cursor: pointer;
+}
+
+#anim:hover {
+  background-color:  #4d4d4d;
+  cursor: pointer;
+}
+
+.shuf {
+  position: relative !important;
+  top: 20px !important;
+}
+
+.playButtonHover{
+  background-color: #1ED760;
+}
+.playButtonHover:hover{
+  transform: scale(1.1);
+}
+
+

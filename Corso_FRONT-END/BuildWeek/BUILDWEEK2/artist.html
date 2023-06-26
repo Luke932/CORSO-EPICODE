@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="icon" href="assets/imgs/Spotify_icon.svg.png">
+  <title>Artist Page</title>
+</head>
+
+<body>
+  <div class="row m-0 main" id="main">
+    <div class="col-md-2 col-12 bg-black NavbarContainer">
+      <div class="p-3">
+        <div class="navbarHover dropdown mb-3 d-none d-md-block">
+          <svg href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" xmlns="http://www.w3.org/2000/svg"
+            width="30" height="30" fill="currentColor" class="bi bi-three-dots text-secondary" viewBox="0 0 16 16">
+            <path
+              d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+          </svg>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <!---->
+        <nav id="Navbar">
+          <div class="d-flex my-3 text-secondary" onclick="goHome()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-house-door-fill me-3" viewBox="0 0 16 16">
+              <path
+                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+            </svg>
+
+            <p class="m-0 mt-1">Home</p>
+
+          </div>
+          <div class="d-flex my-3 text-secondary" id="searchButton"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-search me-3" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            <p class="m-0 mt-1">Cerca</p>
+          </div>
+          <div class="d-flex my-3 mb-5 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-music-note-list me-3" viewBox="0 0 16 16">
+              <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+              <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+              <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
+              <path fill-rule="evenodd"
+                d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <p class="m-0 mt-1">La tua libreria</p>
+          </div>
+        </nav>
+        <!---->
+        <div class="d-none d-md-block">
+          <div class="d-flex my-3 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-plus-square-fill me-3" viewBox="0 0 16 16">
+              <path
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+            </svg>
+            <p class="m-0 mt-1">Crea playlist</p>
+          </div>
+          <div class="d-flex my-3 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-heart-fill me-3 CuoreB p-2 rounded-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg>
+            <p class="m-0 mt-1">Brani che ti piacciono</p>
+          </div>
+          <div class="d-flex my-3 pb-3 border-bottom text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+              height="30" fill="currentColor" class="bi bi-bookmark-fill me-3 Bookmark p-2 text-success rounded-1" viewBox="0 0 16 16">
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+            </svg>
+            <p class="m-0 mt-1">I tuoi episodi</p>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="playlistSalvate ps-3 d-none d-md-block" id="playListDiv">
+
+      </div>
+
+    </div>
+    <div class="col-12 col-md-10 col-lg-8 text-white MainContent p-0 pb-5" id="MainContentArtist">
+        <div class="barraUtente py-3">
+            <div class="ps-2">
+              <svg xmlns="http://www.w3.org/2000/svg" onclick="goBack()" width='30' height="30" class="ionicon frecciaSinistra" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm62.63 304L296 374.63 177.37 256 296 137.37 318.63 160l-96 96z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width='30' height="30" class="ionicon opacity-50 d-none d-md-inline" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm-40 326.63L193.37 352l96-96-96-96L216 137.37 334.63 256z"/></svg> 
+              </div>
+              <div class="dropdown d-none d-md-block">
+              <button type="button" class="rounded-5 btn bg-black text-white ps-0 py-0 dropdown-toggle" data-bs-toggle="dropdown">
+                <img src="assets/imgs/friends/awdawd.jpg" alt="gatto1" width="25" height="25"
+                class="rounded-circle me-2">Team Ballo</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tinballo</a></li>
+                  <li><a class="dropdown-item" href="#">T'imballo</a></li>
+                  <li><a class="dropdown-item" href="#">Pincopallo</a></li>
+                  <li><a class="dropdown-item" href="#">Damiano</a></li>
+              </ul>
+              </div>
+              
+        </div>
+        <img id="immagineCanvas" src="" class="d-none">
+    </div>
+    <div class="col-2 p-0 sidebarRx d-none d-lg-block">
+      <div class="px-4 bg-black pt-4 container-fluid">
+        <br>
+        <div class="d-flex fs-5 justify-content-between text-white align-items-center mb-3">Attivita amici <div
+            class="sidebarRxIcons"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-person-plus" viewBox="0 0 16 16">
+              <path
+                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              <path fill-rule="evenodd"
+                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-x-lg ms-2" viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg></div>
+        </div>
+        <div class="row">
+          <div class="col-2"><img src="assets/imgs/friends/awdawd.jpg" alt="gatto1" width="30" height="30"
+              class="rounded-circle"></div>
+          <div class="col-10 " id="ok">
+            <div class="d-flex justify-content-between " id="ok">
+              <p class="mb-0">Charlie Hookham</p>
+              <p class="mb-0">4 ore</p>
+            </div>
+            <p class="mb-0">In Camera<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-dot mx-1 text-white" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              </svg>Yumi Zouma</p>
+            <p class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-disc me-1" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z" />
+              </svg> EP III</p>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-2"><img src="assets/imgs/friends/images.jpg" alt="gatto1" width="30" height="30"
+              class="rounded-circle"></div>
+          <div class="col-10 " id="ok">
+            <div class="d-flex justify-content-between" id="ok">
+              <p class="mb-0">lightdark02</p>
+              <p class="mb-0">8 ore</p>
+            </div>
+            <p class="mb-0">Aimed to Kill<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-dot mx-1 text-white" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              </svg>Jade LeMac</p>
+            <p class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-disc me-1" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z" />
+              </svg> Aimed to Kill</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2"><img src="assets/imgs/friends/fwfeef.jpg" alt="gatto1" width="30" height="30"
+              class="rounded-circle"></div>
+          <div class="col-10" id="ok">
+            <div class="d-flex justify-content-between" id="ok">
+              <p class="mb-0">Valeria Traverso</p>
+              <p class="mb-0">3 giorni</p>
+            </div>
+            <p class="mb-0">New Kings<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-dot mx-1 text-white" viewBox="0 0 16 16">
+                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+              </svg>Sleeping Wolf</p>
+            <p class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-music-note-beamed me-1" viewBox="0 0 16 16">
+                <path
+                  d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+              </svg>Twint Badass mood</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Audioplayer-->
+<div id="audioPlayer" class="row"></div>
+<!--Modals-->
+<div id="infoModal" class="modal">
+  <div class="modal-dialog" id="modalPosition">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+        <label for="searchInput">Cerca</label>
+        <input type="text" name="searchInput" id="searchInput">
+        <button type="button" id="modalButton"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+          fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="searchButton">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg></button>
+        <span class="close">&times;</span>
+        </form>
+      </div>
+    </div>
+  </div>    
+</div>
+  <script src="assets/JS/artist.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

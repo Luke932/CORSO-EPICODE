@@ -1,0 +1,121 @@
+#backgroundImage {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20%;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.7);
+    top: 0;
+    left: 0;
+  }
+  
+  #backgroundRelative {
+    position: relative;
+  }
+  
+  #backgroundImage2 {
+    position: relative;
+    z-index: 1;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    color: #fff; 
+  }
+  
+  #backgroundImage2 p {
+    color: #fff; 
+  }
+  
+  #backgroundImage2 h1 {
+    font-size: 6rem;
+    color: #fff; 
+  }
+.barraUtente{
+    z-index: 2;
+    position: fixed;
+    width: 65%;
+    .dropdown{
+      top: 0 !important;
+    }
+}
+
+.vedoNonVedo{
+    display: none;
+}
+#MainContentArtist{
+  background: linear-gradient(to bottom, #333333 ,#0c0c0c);
+}
+.TrackHover:hover{
+  background-color: #4d4d4d;
+  .indiceTracks{
+    display: none !important;
+  }
+  .playHoverTrack{
+    display: flex !important;
+  }
+  .cuoreHover{
+    display: inline !important;
+  }
+}
+.cuoreRelative{
+  position: relative;
+}
+.cuoreAbsolute{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.follow:hover{
+  background-color: #4b4b4b;
+}
+.playButtonHover{
+  background-color: #1ED760;
+}
+.playButtonHover:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 766px) {
+  .cuoreAbsolute{
+    right: 40px;
+  }
+    .frecciaSinistra{
+        width: 60px;
+        height: 60px;
+    }
+    .frecciaSinistraHome
+     
+    .artistaVerificato, .ascoltiMensili{
+        display: none;
+    }
+    .vedoNonVedo{
+        display: block;
+    }
+    .playFollow{
+        display: none !important;
+    }
+    .popolari{
+        order: 2;
+    }
+}
+
+@media (min-width: 2000px) {
+  .cuoreAbsolute{
+    right: 20px;
+  }
+}
+@media (max-width: 630px) {
+  .cuoreAbsolute{
+    right: 20px;
+  }
+}
+@media (max-width: 990px){
+  .barraUtente{
+    width: 80%;
+  }
+}
+.green {
+  color: #1ED760 !important;
+}

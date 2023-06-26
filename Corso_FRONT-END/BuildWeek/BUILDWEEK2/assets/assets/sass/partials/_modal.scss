@@ -1,0 +1,45 @@
+.modal-content {
+    background-color: black;
+    color: white;
+
+    form {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    label {
+        margin-right: 1em;
+    }
+
+    input {
+        background-color: #242424;
+        color: white;
+        margin-right: 1em;
+
+        @media (min-width: 766px) {
+            width: 65%;
+        }
+    }
+
+    button {
+        background-color: #242424;
+        margin-right: 1em;
+
+        svg {
+            width: 1.5em;
+            fill: white;
+            margin: 0;
+        }
+    }
+}
+
+#modalPosition {
+    top: 600px;
+
+    @media (min-width: 766px) {
+        margin-left: 0;
+        top: 60px;
+        left: 120px;
+    }
+}

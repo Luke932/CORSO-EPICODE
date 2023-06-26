@@ -1,0 +1,25 @@
+@import '../sass/partials/font-face';
+@import '../sass/partials/navbar';
+@import '../sass/partials/home';
+@import '../sass/partials/album';
+@import '../sass/partials/artist';
+@import '../sass/partials/audioPlayer';
+@import '../sass/partials/modal';
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+    font-family: "Circular";
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  font-weight: 700;
+  color: gray;
+}
+
+  

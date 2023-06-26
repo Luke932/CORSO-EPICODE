@@ -1,0 +1,868 @@
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-LightItalic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Book.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-BookItalic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-BoldItalic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url(../fonts/CircularStd-BlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
+}
+.NavbarContainer {
+  max-height: 100vh;
+  z-index: 1;
+  font-size: 0.8rem;
+}
+
+.CuoreB {
+  background: linear-gradient(146deg, rgb(53, 47, 154) 0%, rgb(47, 49, 57) 50%, rgb(113, 177, 190) 100%);
+}
+
+.Bookmark {
+  background-color: rgb(27, 77, 27);
+}
+
+#Navbar {
+  cursor: pointer;
+}
+
+.NavbarContainer svg:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+.NavbarContainer div:hover {
+  color: white !important;
+}
+
+.NavbarContainer p:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+.playlistSalvate {
+  overflow-y: auto;
+  max-height: 60%;
+}
+
+.playlistSalvate::-webkit-scrollbar {
+  width: 10px;
+}
+
+.playlistSalvate::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.playlistSalvate::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.playlistSalvate::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.playlistSalvate p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gray;
+}
+
+.sidebarRxIcons {
+  color: #585858;
+}
+
+.sidebarRx {
+  height: 100vh;
+}
+
+.px-4 {
+  padding: 0.5rem !important;
+  font-size: 0.8em;
+}
+
+.sidebarRx .bg-black {
+  height: 100%;
+}
+
+@media (max-width: 766px) {
+  #Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  #Navbar div {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 !important;
+  }
+  #Navbar div #NavBar,
+  #Navbar div div,
+  #Navbar div svg {
+    margin: 0 !important;
+  }
+  .NavbarContainer {
+    padding: 0rem !important;
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgb(0, 0, 0) 50%) !important;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgb(0, 0, 0) 50%) !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgb(0, 0, 0) 50%) !important;
+  }
+  .NavbarContainer div {
+    opacity: 1 !important;
+  }
+  #songContainer {
+    display: none !important;
+  }
+}
+.barraUtente {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+
+@media (max-height: 1200px) {
+  .playlistSalvate {
+    max-height: 45%;
+  }
+}
+@media (max-height: 1060px) {
+  .playlistSalvate {
+    max-height: 40%;
+  }
+}
+@media (max-height: 950px) {
+  .playlistSalvate {
+    max-height: 35%;
+  }
+}
+@media (max-height: 850px) {
+  .playlistSalvate {
+    max-height: 24%;
+  }
+}
+@media (max-height: 750px) {
+  .playlistSalvate {
+    max-height: 20%;
+  }
+}
+@media (max-height: 650px) {
+  .playlistSalvate {
+    max-height: 10%;
+  }
+}
+@media (max-height: 550px) {
+  .playlistSalvate {
+    display: none !important;
+  }
+}
+.MainContent {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #121212;
+  padding: 1em;
+  overflow-x: hidden;
+}
+
+.MainContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.MainContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.MainContent::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.MainContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.playListSongImage {
+  max-width: 80%;
+  border-radius: 3px 0 0 3px;
+}
+
+.mainSongImage {
+  margin-right: 1em;
+  padding: 1em;
+  max-width: 100%;
+}
+
+.favListSongImage {
+  box-shadow: 0 0 5px white;
+  max-width: 100%;
+}
+@media (min-width: 766px) {
+  .favListSongImage {
+    padding: 0;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
+
+.playButton {
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  margin-right: 1em;
+  background-color: #1ed760;
+  border: none;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 0 white;
+}
+
+.saveButton {
+  padding: 0.5em 2em;
+  border-radius: 30px;
+  margin-right: 1em;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.homeTitle {
+  font-size: 4em;
+}
+
+.songInfoDiv {
+  padding: 0;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+.songInfoDiv p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playListCard {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+}
+@media (min-width: 766px) {
+  .playListCard {
+    background-color: #242424;
+  }
+}
+
+@media (min-width: 766px) {
+  .playListCard:hover {
+    box-shadow: 1px 1px 5px 1px white;
+    transform: scale(1.1);
+  }
+}
+
+.favListCard {
+  background-color: #242424;
+  border: 0;
+  border-radius: 10px;
+  padding: 1em;
+}
+@media (min-width: 766px) {
+  .favListCard {
+    padding: 0.7em;
+    background-color: #0e0d0d;
+  }
+}
+
+.favListCard:hover {
+  box-shadow: 1px 1px 5px 1px white;
+  transform: scale(1.03);
+}
+
+.mainSongCard {
+  background: linear-gradient(20deg, black, #121212);
+  border: none;
+  color: white;
+}
+.mainSongCard h1:hover,
+.mainSongCard button:hover {
+  color: gray;
+}
+.mainSongCard h1:hover {
+  cursor: pointer;
+}
+
+.mainSongInfoDiv {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mainSongInfoDiv p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mainSongInfoDiv h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playListRow {
+  color: white;
+  border-radius: 10px;
+}
+.playListRow p:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+@media (max-width: 765px) {
+  .playListRow:hover {
+    box-shadow: 1px 1px 5px 1px white;
+    transform: scale(1.05);
+    z-index: 10;
+  }
+}
+
+.playListRow2 {
+  color: white;
+}
+.playListRow2 p:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.favListRow {
+  color: white;
+  padding: 1em;
+}
+.favListRow p:hover {
+  color: gray;
+}
+
+.favSongInfoDiv {
+  font-size: 1.2em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.favSongInfoDiv p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.favSongInfoDiv .favSongName {
+  font-size: 2em;
+}
+@media (min-width: 766px) {
+  .favSongInfoDiv {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .favSongInfoDiv .favSongName {
+    font-size: small;
+  }
+}
+
+.playListSongDiv {
+  margin-bottom: 1em;
+}
+
+.barraUtente {
+  position: sticky;
+  top: 0;
+}
+
+.nBrani {
+  margin: 0 1em 0 0;
+}
+
+/*
+.svgGreen {
+  fill: #1ed760;
+}
+*/
+.mainBlurred {
+  opacity: 0.9;
+}
+
+.cardinia {
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+.cardinia .img-fluid {
+  box-shadow: 10px 10px 5px #dedede, -10px -10px 5px #dedede, 10px -10px 5px #dedede, -10px 10px 5px #dedede;
+  position: relative;
+  top: 30px;
+}
+.cardinia .album {
+  position: relative;
+  left: 50px;
+}
+.cardinia h1 {
+  margin: 0;
+  font-size: 5em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cardinia .d-flex > p {
+  font-size: 0.8em;
+  position: relative;
+  top: 5px;
+}
+.cardinia .pincopallino {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.ms-1 {
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: green;
+}
+
+.greys {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.linear {
+  line-height: 3;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.barraUtente {
+  position: fixed;
+  width: 60%;
+}
+
+@media screen and (min-width: 414px) and (max-width: 765px) {
+  #image {
+    position: relative;
+    left: 50px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 765px) {
+  #image {
+    position: relative;
+    left: 120px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 765px) {
+  .pincopallo {
+    position: relative;
+    right: 50px;
+  }
+}
+.grey {
+  color: rgba(255, 255, 255, 0.61);
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 766px) {
+  .grey {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+  }
+}
+.dropdown {
+  position: relative;
+  top: 8px;
+}
+
+.camva {
+  position: relative;
+  left: 100px;
+}
+
+@media screen and (max-width: 765px) {
+  .pincopallino {
+    display: none !important;
+  }
+  .iter {
+    width: 30%;
+  }
+  #profile {
+    width: 30px !important;
+    height: 30px !important;
+    white-space: nowrap;
+  }
+  .giovane {
+    white-space: nowrap;
+  }
+}
+.compars {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.bongo {
+  position: relative;
+  top: 10px;
+}
+
+#bingo {
+  position: relative;
+  bottom: 8px;
+  width: 80%;
+}
+
+.backgr {
+  padding: 1rem;
+  border-radius: 100px;
+  background-color: green;
+}
+
+@media screen and (min-width: 766px) {
+  .powerangers, .compars {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 765px) {
+  .greys {
+    margin-bottom: 1rem;
+  }
+}
+.cursor, .shuf {
+  cursor: pointer;
+}
+
+#anim:hover {
+  background-color: #4d4d4d;
+  cursor: pointer;
+}
+
+.shuf {
+  position: relative !important;
+  top: 20px !important;
+}
+
+.playButtonHover {
+  background-color: #1ED760;
+}
+
+.playButtonHover:hover {
+  transform: scale(1.1);
+}
+
+#backgroundImage {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.7);
+  top: 0;
+  left: 0;
+}
+
+#backgroundRelative {
+  position: relative;
+}
+
+#backgroundImage2 {
+  position: relative;
+  z-index: 1;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  color: #fff;
+}
+
+#backgroundImage2 p {
+  color: #fff;
+}
+
+#backgroundImage2 h1 {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.barraUtente {
+  z-index: 2;
+  position: fixed;
+  width: 65%;
+}
+.barraUtente .dropdown {
+  top: 0 !important;
+}
+
+.vedoNonVedo {
+  display: none;
+}
+
+#MainContentArtist {
+  background: linear-gradient(to bottom, #333333, #0c0c0c);
+}
+
+.TrackHover:hover {
+  background-color: #4d4d4d;
+}
+.TrackHover:hover .indiceTracks {
+  display: none !important;
+}
+.TrackHover:hover .playHoverTrack {
+  display: flex !important;
+}
+.TrackHover:hover .cuoreHover {
+  display: inline !important;
+}
+
+.cuoreRelative {
+  position: relative;
+}
+
+.cuoreAbsolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.follow:hover {
+  background-color: #4b4b4b;
+}
+
+.playButtonHover {
+  background-color: #1ED760;
+}
+
+.playButtonHover:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 766px) {
+  .cuoreAbsolute {
+    right: 40px;
+  }
+  .frecciaSinistra {
+    width: 60px;
+    height: 60px;
+  }
+  .frecciaSinistraHome .artistaVerificato,
+  .ascoltiMensili {
+    display: none;
+  }
+  .vedoNonVedo {
+    display: block;
+  }
+  .playFollow {
+    display: none !important;
+  }
+  .popolari {
+    order: 2;
+  }
+}
+@media (min-width: 2000px) {
+  .cuoreAbsolute {
+    right: 20px;
+  }
+}
+@media (max-width: 630px) {
+  .cuoreAbsolute {
+    right: 20px;
+  }
+}
+@media (max-width: 990px) {
+  .barraUtente {
+    width: 80%;
+  }
+}
+.green {
+  color: #1ED760 !important;
+}
+
+#audioPlayer {
+  width: 100%;
+  background-color: #0e0d0d;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  bottom: 90px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+@media (min-width: 766px) {
+  #audioPlayer {
+    bottom: 0;
+  }
+}
+
+.staticBar {
+  width: 80%;
+  height: 2px;
+  background-color: gray;
+  margin: auto;
+}
+
+.playerBar {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  display: none;
+  transition: width 1s linear;
+}
+
+.playerPlay {
+  width: 2em;
+}
+
+.playerImage {
+  width: 20%;
+}
+
+.div1Div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div1Div p, .div1Div h5 {
+  margin: 0;
+}
+@media (min-width: 766px) {
+  .div1Div {
+    font-size: 0.7em;
+  }
+}
+
+.playerDiv1 {
+  padding: 0.6em 0 0.6em 0.6em;
+  justify-content: center;
+}
+@media (min-width: 766px) {
+  .playerDiv1 {
+    justify-content: unset;
+  }
+}
+
+.modal-content {
+  background-color: black;
+  color: white;
+}
+.modal-content form {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.modal-content label {
+  margin-right: 1em;
+}
+.modal-content input {
+  background-color: #242424;
+  color: white;
+  margin-right: 1em;
+}
+@media (min-width: 766px) {
+  .modal-content input {
+    width: 65%;
+  }
+}
+.modal-content button {
+  background-color: #242424;
+  margin-right: 1em;
+}
+.modal-content button svg {
+  width: 1.5em;
+  fill: white;
+  margin: 0;
+}
+
+#modalPosition {
+  top: 600px;
+}
+@media (min-width: 766px) {
+  #modalPosition {
+    margin-left: 0;
+    top: 60px;
+    left: 120px;
+  }
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Circular";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  font-weight: 700;
+  color: gray;
+}/*# sourceMappingURL=style.css.map */

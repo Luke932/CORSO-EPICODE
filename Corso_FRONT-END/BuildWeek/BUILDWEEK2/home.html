@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="icon" href="./assets/imgs/6642199-icona-spotify-logo-spotify-set-di-logo-simbolo-spotify-gratuito-vettoriale.jpg">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="icon" href="assets/imgs/Spotify_icon.svg.png">
+  <title>Home Page</title>
+</head>
+
+<body>
+  <div class="row m-0 main" id="main">
+    <!--Navbar Sinistra-->
+    <div class="col-md-2 col-12 bg-black NavbarContainer">
+      <div class="p-3">
+        <div class="navbarHover dropdown mb-3 d-none d-md-block">
+          <svg href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" xmlns="http://www.w3.org/2000/svg"
+            width="30" height="30" fill="currentColor" class="bi bi-three-dots text-secondary" viewBox="0 0 16 16">
+            <path
+              d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+          </svg>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <!---->
+        <nav id="Navbar">
+          <div class="d-flex my-3 text-secondary" onclick="goHome()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-house-door-fill me-3" viewBox="0 0 16 16">
+              <path
+                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+            </svg>
+        
+              <p class="m-0 mt-1">Home</p>
+            
+          </div>
+          <div class="d-flex my-3 text-secondary" id="searchButton"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-search me-3" viewBox="0 0 16 16" >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            <p class="m-0 mt-1">Cerca</p>
+          </div>
+          <div class="d-flex my-3 mb-5 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-music-note-list me-3" viewBox="0 0 16 16">
+              <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+              <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+              <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
+              <path fill-rule="evenodd"
+                d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <p class="m-0 mt-1">La tua libreria</p>
+          </div>
+        </nav>
+        <!---->
+        <div class="d-none d-md-block">
+          <div class="d-flex my-3 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-plus-square-fill me-3" viewBox="0 0 16 16">
+              <path
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+            </svg>
+            <p class="m-0 mt-1">Crea playlist</p>
+          </div>
+          <div class="d-flex my-3 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-heart-fill me-3 CuoreB p-2 rounded-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg>
+            <p class="m-0 mt-1">Brani che ti piacciono</p>
+          </div>
+          <div class="d-flex my-3 pb-3 border-bottom text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+              height="30" fill="currentColor" class="bi bi-bookmark-fill me-3 Bookmark p-2 text-success rounded-1" viewBox="0 0 16 16">
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+            </svg>
+            <p class="m-0 mt-1">I tuoi episodi</p>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="playlistSalvate ps-3 d-none d-md-block" id="playListDiv">
+
+      </div>
+
+    </div>
+    <div class="col-12 col-md-10 col-lg-8 text-white MainContent py-5">
+      <div>
+        <div class="barraUtente py-3">
+          <div class="ps-2">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="goBack()" width='30' height="30" class="ionicon d-none d-md-inline" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm62.63 304L296 374.63 177.37 256 296 137.37 318.63 160l-96 96z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width='30' height="30" class="ionicon opacity-50 d-none d-md-inline" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48zm-40 326.63L193.37 352l96-96-96-96L216 137.37 334.63 256z"/></svg> 
+            </div>
+            <div class="dropdown d-none d-md-block">
+            <button type="button" class="rounded-5 btn bg-black text-white ps-0 py-0 dropdown-toggle" data-bs-toggle="dropdown">
+              <img src="assets/imgs/friends/awdawd.jpg" alt="gatto1" width="25" height="25"
+              class="rounded-circle me-2">Team Ballo</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tinballo</a></li>
+                <li><a class="dropdown-item" href="#">T'imballo</a></li>
+                <li><a class="dropdown-item" href="#">Pincopallo</a></li>
+                <li><a class="dropdown-item" href="#">Damiano</a></li>
+            </ul>
+            </div>
+            </div>
+        <div id="songContainer"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="fs-1">Buonasera</h2>
+          <div class="d-md-none">
+            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+            </svg>
+            <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+              <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+              <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+              <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="d-flex mt-5 mb-5 d-md-none">
+          <p class="ms-5">Musica</p>
+          <p class="ms-5">Podcast e show</p>
+        </div>
+        <div id="playListContainer" class="row"></div>
+        <h3 class="d-none d-md-block">Altro di ciò che ti piace</h3>
+        <div id="favouriteContainer" class="row"></div>
+      </div>
+    </div>
+    <!--Navbar Destra-->
+    <div class="col-2 p-0 sidebarRx d-none d-lg-block">
+      <div class="px-4 bg-black pt-4 container-fluid">
+          <br>
+          <div class="d-flex fs-5 justify-content-between text-white align-items-center mb-3">Attivita amici <div
+                  class="sidebarRxIcons"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                      fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                      <path
+                          d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                      <path fill-rule="evenodd"
+                          d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-x-lg ms-2" viewBox="0 0 16 16">
+                      <path
+                          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                  </svg></div>
+          </div>
+          <div class="row">
+              <div class="col-2"><img src="assets/imgs/friends/awdawd.jpg" alt="gatto1" width="30" height="30"
+                      class="rounded-circle"></div>
+              <div class="col-10 "id="ok">
+                  <div class="d-flex justify-content-between " id="ok">
+                      <p class="mb-0">Charlie Hookham</p>
+                      <p class="mb-0">4 ore</p>
+                  </div>
+                  <p class="mb-0">In Camera<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                          fill="currentColor" class="bi bi-dot mx-1 text-white" viewBox="0 0 16 16">
+                          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Yumi Zouma</p>
+                  <p class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-disc me-1" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                          <path
+                              d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z" />
+                      </svg> EP III</p>
+              </div>
+          </div>
+          <div class="row my-3">
+              <div class="col-2"><img src="assets/imgs/friends/images.jpg" alt="gatto1" width="30" height="30"
+                      class="rounded-circle"></div>
+              <div class="col-10 " id="ok">
+                  <div class="d-flex justify-content-between" id="ok">
+                      <p class="mb-0">lightdark02</p>
+                      <p class="mb-0">8 ore</p>
+                  </div>
+                  <p class="mb-0">Aimed to Kill<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                          fill="currentColor" class="bi bi-dot mx-1 text-white" viewBox="0 0 16 16">
+                          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Jade LeMac</p>
+                  <p class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-disc me-1" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                          <path
+                              d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z" />
+                      </svg> Aimed to Kill</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-2"><img src="assets/imgs/friends/fwfeef.jpg" alt="gatto1" width="30" height="30"
+                      class="rounded-circle"></div>
+              <div class="col-10" id="ok">
+                  <div class="d-flex justify-content-between" id="ok">
+                      <p class="mb-0">Valeria Traverso</p>
+                      <p class="mb-0">3 giorni</p>
+                  </div>
+                  <p class="mb-0">New Kings<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                          fill="currentColor" class="bi bi-dot mx-1 text-white" viewBox="0 0 16 16">
+                          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                      </svg>Sleeping Wolf</p>
+                  <p class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-music-note-beamed me-1"
+                          viewBox="0 0 16 16">
+                          <path
+                              d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z" />
+                          <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                          <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                      </svg>Twint Badass mood</p>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!--Audioplayer-->
+    <div id="audioPlayer" class="row"></div>
+
+    <!--Modals-->
+    <div id="infoModal" class="modal">
+      <div class="modal-dialog" id="modalPosition">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form>
+            <label for="searchInput">Cerca</label>
+            <input type="text" name="searchInput" id="searchInput">
+            <button type="button" id="modalButton"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" id="searchButton">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+            <span class="close">&times;</span>
+            </form>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+    <script src="assets/JS/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
