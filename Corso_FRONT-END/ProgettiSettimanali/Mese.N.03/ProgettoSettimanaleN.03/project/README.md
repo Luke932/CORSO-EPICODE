@@ -1,27 +1,69 @@
-# Project
+Certamente! Ecco un esempio di README con emoji che puoi copiare ed incollare nel tuo progetto:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
+markdown
 
-## Development server
+# Progetto Clone di Netflix 🎬
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Questo è un progetto realizzato in Angular con l'ausilio di Bootstrap e Json Server, che replica l'interfaccia e alcune funzionalità di Netflix.
 
-## Code scaffolding
+## Caratteristiche 🌟
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [x] Caricamento e visualizzazione di film e serie TV
+- [x] Aggiunta di contenuti alla lista dei preferiti
 
-## Build
+## Tecnologie Utilizzate 🛠️
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- Bootstrap
+- Json Server
 
-## Running unit tests
+## Installazione e Avvio 🚀
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clona il repository sul tuo computer:
+   ```bash
+   git clone https://github.com/tuo-username/netflix-clone.git
 
-## Running end-to-end tests
+    Entra nella directory del progetto:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    bash
 
-## Further help
+cd netflix-clone
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Installa le dipendenze:
+
+bash
+
+npm install
+
+Avvia il server di sviluppo Angular:
+
+bash
+
+ng serve
+
+Avvia il server JSON:
+
+bash
+
+    json-server --watch db.json
+
+    Visita http://localhost:4200 nel tuo browser.
+
+Contatti e Contributi 📬
+
+Se hai suggerimenti, segnalazioni di bug o desideri contribuire, non esitare a contattarmi!
+Autori ✨
+
+    Tuo Nome
+
+Licenza 📜
+
+Questo progetto è distribuito sotto la licenza [Nome della Licenza]. Vedere il file LICENSE per ulteriori dettagli.
+
+css
+
+
+Ricorda di sostituire i segnaposto come `tuo-username` con le informazioni effettive del tuo progetto. Assicurati anche di avere un file `LICENSE` nel tuo repository.
+
+Spero che questo README ti sia d'aiuto! Se hai bisogno di ulteriori dettagli o modifica, fammelo sapere.
+
