@@ -21,7 +21,7 @@ Questo è un progetto realizzato in Angular con l'ausilio di Bootstrap e Json Se
 
 1. Clona il repository sul tuo computer:
    ```bash
-   git clone https://github.com/tuo-username/netflix-clone.git
+   git clone (https://github.com/Luke932/CORSO-EPICODE/tree/main/Corso_FRONT-END/ProgettiSettimanali/Mese.N.03/ProgettoSettimanaleN.03/project)
 
     Entra nella directory del progetto:
 
@@ -54,7 +54,7 @@ Contatti e Contributi 📬
 Se hai suggerimenti, segnalazioni di bug o desideri contribuire, non esitare a contattarmi!
 Autori ✨
 
-    Tuo Nome
+    Luke932
 
 Licenza 📜
 
