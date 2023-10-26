@@ -1,7 +1,3 @@
-Certamente! Ecco un esempio di README con emoji che puoi copiare ed incollare nel tuo progetto:
-
-markdown
-
 # Progetto Clone di Netflix 🎬
 
 Questo è un progetto realizzato in Angular con l'ausilio di Bootstrap e Json Server, che replica l'interfaccia e alcune funzionalità di Netflix.
